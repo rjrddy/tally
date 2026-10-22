@@ -1,0 +1,12 @@
+node_modules/
+apps/web/node_modules/
+apps/web/dist/
+dist/
+.cache/
+.env
+.env.*
+!.env.example
+.vercel/
+data/
+docs/results/recordings/
+deploy/site/dist/
