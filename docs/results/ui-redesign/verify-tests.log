@@ -1,0 +1,199 @@
+Project: Tally
+Command: make test
+node --env-file=.env --test --test-concurrency=1 dist/tests/*.test.js
+TAP version 13
+# {"event":"request_rejected","trace_id":"d6cd885f-56ee-4cb8-aa14-6714394444fc","status":401,"code":"sign_in_required"}
+# {"event":"http_completed","trace_id":"d6cd885f-56ee-4cb8-aa14-6714394444fc","method":"GET","route":"/api/state","status":401,"elapsed_ms":2.4417080000000624}
+# {"event":"http_completed","trace_id":"c8bbe75d-c730-4b18-ab5b-17877b388816","method":"POST","route":"/api/login","status":201,"elapsed_ms":15.989332999999988}
+# {"event":"http_completed","trace_id":"51d0b2d2-3308-4674-9018-0bd8a041f7d1","method":"GET","route":"/api/state","status":200,"elapsed_ms":15.267875000000004}
+# {"event":"request_rejected","trace_id":"1f111476-b99a-4ebb-9faf-144e27d64cea","status":403,"code":"csrf_required"}
+# {"event":"http_completed","trace_id":"1f111476-b99a-4ebb-9faf-144e27d64cea","method":"POST","route":"/api/rules","status":403,"elapsed_ms":0.9511249999999336}
+# {"event":"http_completed","trace_id":"8f3b9e2c-f2e1-4830-bdea-159f1fae8030","method":"POST","route":"/api/rules","status":201,"elapsed_ms":3.0483749999999645}
+# {"event":"http_completed","trace_id":"b87bc5bb-c075-47e7-988d-da48f32df5c5","method":"POST","route":"/api/logout","status":201,"elapsed_ms":1.3569579999999632}
+# {"event":"request_rejected","trace_id":"6f7a3334-4df5-4f09-aec5-d8b1970d2f67","status":401,"code":"sign_in_required"}
+# {"event":"http_completed","trace_id":"6f7a3334-4df5-4f09-aec5-d8b1970d2f67","method":"GET","route":"/api/state","status":401,"elapsed_ms":0.9548330000000078}
+# Subtest: real HTTP cookie login, CSRF, logout and revocation
+ok 1 - real HTTP cookie login, CSRF, logout and revocation
+  ---
+  duration_ms: 205.444625
+  type: 'test'
+  ...
+# {"event":"http_completed","trace_id":"65d5fa48-a265-4524-9992-baa6ba9d838b","method":"POST","route":"/api/accounts","status":201,"elapsed_ms":3.5627499999999372}
+# {"event":"http_completed","trace_id":"7e7e5315-7968-44bd-afaf-02c9d2c57dbf","method":"POST","route":"/api/accounts","status":201,"elapsed_ms":1.7254580000000033}
+# {"event":"http_completed","trace_id":"167383f5-f5fa-430a-b34b-d4abb4a377c6","method":"POST","route":"/api/ledger/post","status":201,"elapsed_ms":5.834999999999923}
+# {"event":"http_completed","trace_id":"40b97e2e-73ce-437d-9e0a-4c27ca5548d3","method":"GET","route":"/api/state","status":200,"elapsed_ms":1.701082999999926}
+# {"event":"http_completed","trace_id":"b45074e4-006d-4224-9049-999c43f3e985","method":"POST","route":"/api/ledger/replay","status":201,"elapsed_ms":2.325166999999965}
+# Subtest: real HTTP retains money strings above Number safe integer bounds
+ok 2 - real HTTP retains money strings above Number safe integer bounds
+  ---
+  duration_ms: 22.133959
+  type: 'test'
+  ...
+# {"event":"request_rejected","trace_id":"2b09a87c-8278-469f-9317-166a8941bb64","status":409,"code":"idempotency_conflict"}
+# {"event":"http_completed","trace_id":"2b09a87c-8278-469f-9317-166a8941bb64","method":"POST","route":"/api/ledger/post","status":409,"elapsed_ms":4.46104200000002}
+# {"event":"request_rejected","trace_id":"77400f8f-708a-4145-9603-5b8e6ec7fcd6","status":422,"code":"invalid_input"}
+# {"event":"http_completed","trace_id":"77400f8f-708a-4145-9603-5b8e6ec7fcd6","method":"POST","route":"/api/ledger/post","status":422,"elapsed_ms":1.8216670000000477}
+# Subtest: real HTTP rejects float money and conflicting idempotency
+ok 3 - real HTTP rejects float money and conflicting idempotency
+  ---
+  duration_ms: 9.503083
+  type: 'test'
+  ...
+# {"event":"http_completed","trace_id":"9531d313-7bb9-4d77-a024-a3daba26bd2c","method":"POST","route":"static","status":413,"elapsed_ms":1.054666999999995}
+# {"event":"http_completed","trace_id":"36ca48a2-a71c-4827-b599-76c4473878fc","method":"GET","route":"static","status":401,"elapsed_ms":0.4567499999999427}
+# {"event":"http_completed","trace_id":"a560afef-2dcf-4b70-abb4-a02c7a4fa403","method":"GET","route":"static","status":200,"elapsed_ms":0.23662500000000364}
+# {"event":"request_rejected","trace_id":"053816c3-cb89-4383-8fde-4e30523b0e36","status":404,"code":"not_found"}
+# {"event":"http_completed","trace_id":"053816c3-cb89-4383-8fde-4e30523b0e36","method":"GET","route":"static","status":404,"elapsed_ms":0.6842080000000124}
+# Subtest: real HTTP input bounds and authenticated metrics
+ok 4 - real HTTP input bounds and authenticated metrics
+  ---
+  duration_ms: 8.124625
+  type: 'test'
+  ...
+# Subtest: database rejects runtime edits and unbalanced direct-function input atomically
+ok 5 - database rejects runtime edits and unbalanced direct-function input atomically
+  ---
+  duration_ms: 62.102959
+  type: 'test'
+  ...
+# Subtest: concurrent duplicated posting creates one event and one balance effect
+ok 6 - concurrent duplicated posting creates one event and one balance effect
+  ---
+  duration_ms: 23.431625
+  type: 'test'
+  ...
+# Subtest: database account lock prevents competing overdrafts
+ok 7 - database account lock prevents competing overdrafts
+  ---
+  duration_ms: 5.863541
+  type: 'test'
+  ...
+# Subtest: currency mismatch rolls back the entire journal
+ok 8 - currency mismatch rolls back the entire journal
+  ---
+  duration_ms: 3.275542
+  type: 'test'
+  ...
+# Subtest: property: actual Postgres postings conserve and replay exactly
+ok 9 - property: actual Postgres postings conserve and replay exactly
+  ---
+  duration_ms: 124.152042
+  type: 'test'
+  ...
+# Subtest: projection corruption is detected and rebuilds the same balance digest
+ok 10 - projection corruption is detected and rebuilds the same balance digest
+  ---
+  duration_ms: 16.731
+  type: 'test'
+  ...
+# Subtest: rules and decisions remain immutable and exact after new publication
+ok 11 - rules and decisions remain immutable and exact after new publication
+  ---
+  duration_ms: 7.720416
+  type: 'test'
+  ...
+# Subtest: a blocked decision query fails its budget instead of returning approval
+ok 12 - a blocked decision query fails its budget instead of returning approval
+  ---
+  duration_ms: 84.971167
+  type: 'test'
+  ...
+# Subtest: reconciliation review races cannot assign one ledger record twice
+ok 13 - reconciliation review races cannot assign one ledger record twice
+  ---
+  duration_ms: 14.526875
+  type: 'test'
+  ...
+# Subtest: source point identity cannot be silently rewritten
+ok 14 - source point identity cannot be silently rewritten
+  ---
+  duration_ms: 4.080625
+  type: 'test'
+  ...
+# Subtest: property: exact conservation beyond safe JavaScript integer range
+ok 15 - property: exact conservation beyond safe JavaScript integer range
+  ---
+  duration_ms: 13.375333
+  type: 'test'
+  ...
+# Subtest: property: posting line order is semantically idempotent
+ok 16 - property: posting line order is semantically idempotent
+  ---
+  duration_ms: 4.835917
+  type: 'test'
+  ...
+# Subtest: property: every nonzero imbalance is rejected
+ok 17 - property: every nonzero imbalance is rejected
+  ---
+  duration_ms: 4.479917
+  type: 'test'
+  ...
+# Subtest: property: floating point money is rejected
+ok 18 - property: floating point money is rejected
+  ---
+  duration_ms: 5.955042
+  type: 'test'
+  ...
+# Subtest: property: duplicate accounts cannot create a fake balanced journal
+ok 19 - property: duplicate accounts cannot create a fake balanced journal
+  ---
+  duration_ms: 3.753916
+  type: 'test'
+  ...
+# Subtest: property: a changed event body fails its original hash binding
+ok 20 - property: a changed event body fails its original hash binding
+  ---
+  duration_ms: 4.876709
+  type: 'test'
+  ...
+# Subtest: property: a replayed event identity is rejected
+ok 21 - property: a replayed event identity is rejected
+  ---
+  duration_ms: 5.677334
+  type: 'test'
+  ...
+# Subtest: property: request digest changes never pass replay
+ok 22 - property: request digest changes never pass replay
+  ---
+  duration_ms: 3.736417
+  type: 'test'
+  ...
+# Subtest: property: decision boundaries use exact integer comparison
+ok 23 - property: decision boundaries use exact integer comparison
+  ---
+  duration_ms: 1.176917
+  type: 'test'
+  ...
+# Subtest: property: reconciliation is input-order independent
+ok 24 - property: reconciliation is input-order independent
+  ---
+  duration_ms: 9.556583
+  type: 'test'
+  ...
+# Subtest: reconciliation abstains on duplicate bank competition
+ok 25 - reconciliation abstains on duplicate bank competition
+  ---
+  duration_ms: 0.229375
+  type: 'test'
+  ...
+# Subtest: merchant cache is keyed by catalog version and bounded
+ok 26 - merchant cache is keyed by catalog version and bounded
+  ---
+  duration_ms: 20.715125
+  type: 'test'
+  ...
+# Subtest: freshness does not mistake ingestion time or a future point for freshness
+ok 27 - freshness does not mistake ingestion time or a future point for freshness
+  ---
+  duration_ms: 0.257
+  type: 'test'
+  ...
+1..27
+# tests 27
+# suites 0
+# pass 27
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1275.960291

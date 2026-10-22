@@ -1,0 +1,23 @@
+Command: /opt/homebrew/Cellar/postgresql@14/14.14/bin/psql -h 127.0.0.1 -p 55440 -U tally_admin -d tally -v ON_ERROR_STOP=1 -c DROP SCHEMA tally_ui_1792649239 CASCADE
+NOTICE:  drop cascades to 20 other objects
+DETAIL:  drop cascades to table tally_ui_1792649239.migration
+drop cascades to table tally_ui_1792649239.accounts
+drop cascades to table tally_ui_1792649239.ledger_events
+drop cascades to table tally_ui_1792649239.ledger_lines
+drop cascades to table tally_ui_1792649239.rules
+drop cascades to table tally_ui_1792649239.decisions
+drop cascades to table tally_ui_1792649239.catalogs
+drop cascades to table tally_ui_1792649239.recon_batches
+drop cascades to table tally_ui_1792649239.recon_matches
+drop cascades to table tally_ui_1792649239.recon_exceptions
+drop cascades to table tally_ui_1792649239.resolutions
+drop cascades to table tally_ui_1792649239.feeds
+drop cascades to table tally_ui_1792649239.points
+drop cascades to table tally_ui_1792649239.audit
+drop cascades to table tally_ui_1792649239.sessions
+drop cascades to function tally_ui_1792649239.immutable_fact()
+drop cascades to function tally_ui_1792649239.line_creation_only()
+drop cascades to function tally_ui_1792649239.balanced_event()
+drop cascades to function tally_ui_1792649239.post_ledger(text)
+drop cascades to function tally_ui_1792649239.repair_balances()
+DROP SCHEMA

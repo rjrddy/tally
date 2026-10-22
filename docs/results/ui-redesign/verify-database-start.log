@@ -1,0 +1,5 @@
+Project: Tally
+Command: python3 scripts/native_db.py start
+waiting for server to start.... done
+server started
+Owned Tally Postgres ready on loopback 55440; fsync and synchronous_commit enabled.

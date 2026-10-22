@@ -1,0 +1,3 @@
+Command: /opt/homebrew/Cellar/postgresql@14/14.14/bin/pg_ctl -D /Users/rajreddy/dev/outreach/flagships/tally/.cache/postgres/data -l /Users/rajreddy/dev/outreach/flagships/tally/.cache/ui-redesign/1792649239/postgres.log -o -h 127.0.0.1 -p 55440 -k /Users/rajreddy/dev/outreach/flagships/tally/.cache/postgres -c fsync=on -c synchronous_commit=on start
+waiting for server to start.... done
+server started

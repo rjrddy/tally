@@ -7,7 +7,9 @@ from pathlib import Path
 from playwright.sync_api import expect, sync_playwright
 
 url = os.getenv("TALLY_PUBLIC_URL", "https://tally-gamma-lac.vercel.app")
-expected = float(json.loads(Path("docs/results/demo-probe.json").read_text())["format"]["duration"])
+expected = float(
+    json.loads(Path("docs/results/ui-redesign/demo-probe.json").read_text())["format"]["duration"]
+)
 with sync_playwright() as p:
     browser = p.chromium.launch(executable_path=os.getenv("CHROMIUM_PATH"))
     page = browser.new_page(viewport={"width": 1440, "height": 1000})

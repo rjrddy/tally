@@ -24,6 +24,10 @@ flowchart LR
     A --> F[Synthetic feed health / versioned enrichment]
 ```
 
+![Tally console](docs/results/ui-redesign/console-cover.png)
+
+[Visual design references and UI checks](docs/UI.md) · [Redesigned console recording](docs/results/ui-redesign/demo.webm). Historical benchmark evidence remains separate.
+
 4. **Run it:**
 
 ```sh

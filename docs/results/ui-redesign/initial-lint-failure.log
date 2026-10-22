@@ -1,0 +1,29 @@
+Project: Tally
+Command: make lint
+npm run lint
+
+> tally-ledger@0.1.0 lint
+> eslint src tests scripts && prettier --check src tests scripts
+
+Checking formatting...
+All matched files use Prettier code style!
+npm --prefix apps/web run lint
+
+> tally-console@0.1.0 lint
+> prettier --check src
+
+Checking formatting...
+All matched files use Prettier code style!
+.venv/bin/ruff check scripts
+E501 Line too long (112 > 100)
+  --> scripts/site_check.py:10:101
+   |
+ 9 | url = os.getenv("TALLY_PUBLIC_URL", "https://tally-gamma-lac.vercel.app")
+10 | expected = float(json.loads(Path("docs/results/ui-redesign/demo-probe.json").read_text())["format"]["duration"])
+   |                                                                                                     ^^^^^^^^^^^^
+11 | with sync_playwright() as p:
+12 |     browser = p.chromium.launch(executable_path=os.getenv("CHROMIUM_PATH"))
+   |
+
+Found 1 error.
+make: *** [lint] Error 1

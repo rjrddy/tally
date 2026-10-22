@@ -223,7 +223,7 @@ function App() {
         <a className="brand" href="/">
           t/ <span>TALLY</span>
         </a>
-        <p className="rail-label">SYNTHETIC OPERATIONS</p>
+        <p className="rail-label">THE BOOKKEEPER’S INDEX</p>
         <nav>
           {[
             "Ledger",
@@ -235,6 +235,7 @@ function App() {
             <button
               key={t}
               className={tab === t ? "active" : ""}
+              aria-current={tab === t ? "page" : undefined}
               onClick={() => setTab(t)}
             >
               <span>{String(i + 1).padStart(2, "0")}</span>
@@ -274,7 +275,7 @@ function App() {
         <main>
           <div className="heading">
             <div>
-              <p className="eyebrow">DURABLE FACTS. REBUILDABLE VIEWS.</p>
+              <p className="eyebrow">THE TALLY JOURNAL / {tab.toUpperCase()}</p>
               <h1>Every cent has a history.</h1>
               <p className="intro">
                 A journal, a decision, a match. Keep the evidence that connects

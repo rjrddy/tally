@@ -1,0 +1,2 @@
+Command: /Users/rajreddy/dev/outreach/flagships/tally/.cache/runtime/node_modules/node/bin/node --env-file=.env dist/scripts/seed.js
+{"seeded":true,"recon_ledger_rows":37}

@@ -1,0 +1,21 @@
+Project: Tally
+Command: make build
+npm run build
+
+> tally-ledger@0.1.0 build
+> tsc
+
+npm --prefix apps/web run build
+
+> tally-console@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:  0.32 kB
+dist/assets/index-CfZAsi0a.css    9.73 kB │ gzip:  2.93 kB
+dist/assets/index-CSJ5pbJF.js   213.94 kB │ gzip: 66.40 kB
+✓ built in 513ms

@@ -1,0 +1,15 @@
+{
+  "page_errors": [],
+  "elapsed_seconds": 96.66845862497576,
+  "posted_and_idempotent_replay": true,
+  "one_cent_imbalance_rejected": true,
+  "journal_replay_equal": true,
+  "immutable_rule_version_changed_outcome": true,
+  "decisions_replayed": true,
+  "manual_exception_resolved": true,
+  "descriptor_enriched": true,
+  "future_feed_timestamp_visible": true,
+  "reload_persisted": true,
+  "mobile_no_overflow": true,
+  "scope": "Actual local NestJS API and Postgres; no simulated counters"
+}

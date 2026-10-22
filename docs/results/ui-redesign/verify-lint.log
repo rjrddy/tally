@@ -1,0 +1,19 @@
+Command: make lint
+npm run lint
+
+> tally-ledger@0.1.0 lint
+> eslint src tests scripts && prettier --check src tests scripts
+
+Checking formatting...
+All matched files use Prettier code style!
+npm --prefix apps/web run lint
+
+> tally-console@0.1.0 lint
+> prettier --check src
+
+Checking formatting...
+All matched files use Prettier code style!
+.venv/bin/ruff check scripts
+All checks passed!
+.venv/bin/ruff format --check scripts
+5 files already formatted
