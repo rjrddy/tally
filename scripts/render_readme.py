@@ -30,7 +30,7 @@ readme = f"""# Tally
 flowchart LR
     U[React operations console] --> A[NestJS / sessions / CSRF]
     A --> L[Postgres posting function / idempotency / lock]
-    L --> E[(Immutable journal and signed lines)]
+    L --> E[(Immutable journal and posting lines)]
     E --> R[Hash-checked replay]
     R --> B[(Rebuildable balance projection)]
     A --> D[Versioned decision rules / bounded response budget]

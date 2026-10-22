@@ -1,0 +1,15 @@
+# Optional persistent Postgres template; not deployed or provisioned.
+# The database plan below is paid. Do not claim this is a free persistent runtime.
+services:
+  - type: web
+    name: tally-api
+    runtime: docker
+    plan: starter
+    healthCheckPath: /health
+    envVars:
+      - {key: TALLY_DATABASE_URL, sync: false}
+      - {key: TALLY_PASSWORD, generateValue: true}
+      - {key: TALLY_TOKEN, generateValue: true}
+      - {key: TALLY_COOKIE_SECURE, value: '1'}
+# Run migrations and seed explicitly with separate migration credentials before
+# starting the API. Never put database-owner credentials in the runtime service.
