@@ -1,0 +1,32 @@
+{
+  "posted": 1000,
+  "ledger_replayed": 1003,
+  "duplicates_effects": 0,
+  "decision_p99_ms": [
+    {
+      "concurrency": 1,
+      "p99_ms": 2.3009170000000267,
+      "failures": 0,
+      "budget_met": true
+    },
+    {
+      "concurrency": 4,
+      "p99_ms": 3.5644579999998314,
+      "failures": 0,
+      "budget_met": true
+    },
+    {
+      "concurrency": 16,
+      "p99_ms": 14.95070799999985,
+      "failures": 0,
+      "budget_met": true
+    }
+  ],
+  "reconciliation": {
+    "matches": 151,
+    "precision": 1,
+    "recall": 0.8435754189944135,
+    "wrong": 0
+  },
+  "enrichment_accuracy": 1
+}

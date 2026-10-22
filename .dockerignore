@@ -1,0 +1,12 @@
+.git
+.env
+.env.*
+.cache
+.venv
+node_modules
+apps/web/node_modules
+apps/web/dist
+dist
+docs
+deploy/site/dist
+__pycache__

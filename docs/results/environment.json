@@ -1,0 +1,9 @@
+{
+  "node": "v22.23.4",
+  "postgres": {
+    "version": "PostgreSQL 14.14 (Homebrew) on aarch64-apple-darwin24.1.0, compiled by Apple clang version 16.0.0 (clang-1600.0.26.4), 64-bit",
+    "fsync": "on",
+    "synchronous_commit": "on"
+  },
+  "normalization_example": "synthetic cafe"
+}

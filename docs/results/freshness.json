@@ -1,0 +1,30 @@
+{
+  "virtual_clock_fixture": true,
+  "report": {
+    "source": "synthetic_feed",
+    "as_of": "2026-01-01T12:00:00.000Z",
+    "age_ms": 3600000,
+    "budget_ms": 60000,
+    "points": 3,
+    "healthy": false,
+    "alerts": [
+      {
+        "kind": "missing",
+        "id": "c"
+      },
+      {
+        "kind": "future_timestamp",
+        "id": "future"
+      },
+      {
+        "kind": "outlier",
+        "id": "b"
+      },
+      {
+        "kind": "stale",
+        "age_ms": 3600000
+      }
+    ],
+    "scope": "synthetic source timestamps; not a market-data integration"
+  }
+}

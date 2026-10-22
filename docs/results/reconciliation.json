@@ -1,0 +1,2849 @@
+{
+  "scope": "Synthetic records; amount/date drift, formatting, typo, ambiguous and missing-counterpart injections.",
+  "seed": 42,
+  "bank_records": 200,
+  "ledger_records": 187,
+  "true_pairs": 179,
+  "matches": 151,
+  "correct": 151,
+  "false_matches": 0,
+  "match_rate": 0.755,
+  "precision": 1,
+  "false_match_rate": 0,
+  "recall": 0.8435754189944135,
+  "exceptions": 49,
+  "bank": [
+    {
+      "id": "bank_0",
+      "currency": "USD",
+      "amount_minor": "10025",
+      "day": "2026-01-01",
+      "description": "POS* Synthetic Junipre Cafe order 0 #12345"
+    },
+    {
+      "id": "bank_1",
+      "currency": "USD",
+      "amount_minor": "10135",
+      "day": "2026-01-02",
+      "description": "Synthetic Orion Tools order 1"
+    },
+    {
+      "id": "bank_2",
+      "currency": "USD",
+      "amount_minor": "10311",
+      "day": "2026-01-03",
+      "description": "Synthetic Meadow Books order 2"
+    },
+    {
+      "id": "bank_3",
+      "currency": "USD",
+      "amount_minor": "10403",
+      "day": "2026-01-04",
+      "description": "Synthetic Cedar Market order 3"
+    },
+    {
+      "id": "bank_4",
+      "currency": "USD",
+      "amount_minor": "10545",
+      "day": "2026-01-05",
+      "description": "Synthetic Beacon Transit order 4"
+    },
+    {
+      "id": "bank_5",
+      "currency": "USD",
+      "amount_minor": "10637",
+      "day": "2026-01-06",
+      "description": "Synthetic Aster Studio order 5"
+    },
+    {
+      "id": "bank_6",
+      "currency": "USD",
+      "amount_minor": "10806",
+      "day": "2026-01-07",
+      "description": "Synthetic Lumen Cycles order 6"
+    },
+    {
+      "id": "bank_7",
+      "currency": "USD",
+      "amount_minor": "10900",
+      "day": "2026-01-08",
+      "description": "POS* Synthetic Harbor Garden order 7 #12345"
+    },
+    {
+      "id": "bank_8",
+      "currency": "USD",
+      "amount_minor": "11103",
+      "day": "2026-01-09",
+      "description": "Synthetic Juniper Cafe order 8"
+    },
+    {
+      "id": "bank_9",
+      "currency": "USD",
+      "amount_minor": "11242",
+      "day": "2026-01-10",
+      "description": "Synthetic Orion Tools order 9"
+    },
+    {
+      "id": "bank_10",
+      "currency": "USD",
+      "amount_minor": "11355",
+      "day": "2026-01-11",
+      "description": "Synthetic Meadow Books order 10"
+    },
+    {
+      "id": "bank_11",
+      "currency": "USD",
+      "amount_minor": "11446",
+      "day": "2026-01-12",
+      "description": "Synthetic Cedar Market order 11"
+    },
+    {
+      "id": "bank_12",
+      "currency": "USD",
+      "amount_minor": "11588",
+      "day": "2026-01-13",
+      "description": "Synthetic Beacon Transit order 12"
+    },
+    {
+      "id": "bank_13",
+      "currency": "USD",
+      "amount_minor": "11737",
+      "day": "2026-01-14",
+      "description": "Synthetic Aster Studio order 13"
+    },
+    {
+      "id": "bank_14",
+      "currency": "USD",
+      "amount_minor": "11837",
+      "day": "2026-01-15",
+      "description": "POS* Synthetic Lumen Cycles order 14 #12345"
+    },
+    {
+      "id": "bank_15",
+      "currency": "USD",
+      "amount_minor": "11914",
+      "day": "2026-01-16",
+      "description": "Synthetic Harbor Garden order 15"
+    },
+    {
+      "id": "bank_16",
+      "currency": "USD",
+      "amount_minor": "12046",
+      "day": "2026-01-17",
+      "description": "Synthetic Juniper Cafe order 16"
+    },
+    {
+      "id": "bank_17",
+      "currency": "USD",
+      "amount_minor": "12254",
+      "day": "2026-01-18",
+      "description": "Synthetic Orion Tools order 17"
+    },
+    {
+      "id": "bank_18",
+      "currency": "USD",
+      "amount_minor": "12378",
+      "day": "2026-01-19",
+      "description": "Synthetic Meadow Books order 18"
+    },
+    {
+      "id": "bank_19",
+      "currency": "USD",
+      "amount_minor": "12501",
+      "day": "2026-01-20",
+      "description": "Synthetic Cedar Market order 19"
+    },
+    {
+      "id": "bank_20",
+      "currency": "USD",
+      "amount_minor": "12595",
+      "day": "2026-01-01",
+      "description": "Synthetic Beacon Transit order 20"
+    },
+    {
+      "id": "bank_21",
+      "currency": "USD",
+      "amount_minor": "12685",
+      "day": "2026-01-02",
+      "description": "POS* Synthetic Aster Studio order 21 #12345"
+    },
+    {
+      "id": "bank_22",
+      "currency": "USD",
+      "amount_minor": "12849",
+      "day": "2026-01-03",
+      "description": "Synthetic Lumen Cycles order 22"
+    },
+    {
+      "id": "bank_23",
+      "currency": "USD",
+      "amount_minor": "12946",
+      "day": "2026-01-04",
+      "description": "Synthetic Harbor Garden order 23"
+    },
+    {
+      "id": "bank_24",
+      "currency": "USD",
+      "amount_minor": "13142",
+      "day": "2026-01-05",
+      "description": "Synthetic Juniper Cafe order 24"
+    },
+    {
+      "id": "bank_25",
+      "currency": "USD",
+      "amount_minor": "13257",
+      "day": "2026-01-06",
+      "description": "Synthetic Orion Tools order 25"
+    },
+    {
+      "id": "bank_26",
+      "currency": "USD",
+      "amount_minor": "13317",
+      "day": "2026-01-07",
+      "description": "Synthetic Meadow Books order 26"
+    },
+    {
+      "id": "bank_27",
+      "currency": "USD",
+      "amount_minor": "13511",
+      "day": "2026-01-08",
+      "description": "Synthetic Cedar Market order 27"
+    },
+    {
+      "id": "bank_28",
+      "currency": "USD",
+      "amount_minor": "13602",
+      "day": "2026-01-09",
+      "description": "POS* Synthetic Beacon Transit order 28 #12345"
+    },
+    {
+      "id": "bank_29",
+      "currency": "USD",
+      "amount_minor": "13689",
+      "day": "2026-01-10",
+      "description": "Synthetic Aster Studio order 29"
+    },
+    {
+      "id": "bank_30",
+      "currency": "USD",
+      "amount_minor": "13812",
+      "day": "2026-01-11",
+      "description": "Synthetic Lumen Cycles order 30"
+    },
+    {
+      "id": "bank_31",
+      "currency": "USD",
+      "amount_minor": "13990",
+      "day": "2026-01-12",
+      "description": "Synthetic Harbor Garden order 31"
+    },
+    {
+      "id": "bank_32",
+      "currency": "USD",
+      "amount_minor": "14146",
+      "day": "2026-01-13",
+      "description": "Synthetic Juniper Cafe order 32"
+    },
+    {
+      "id": "bank_33",
+      "currency": "USD",
+      "amount_minor": "14275",
+      "day": "2026-01-14",
+      "description": "Synthetic Orion Tools order 33"
+    },
+    {
+      "id": "bank_34",
+      "currency": "USD",
+      "amount_minor": "14386",
+      "day": "2026-01-15",
+      "description": "Synthetic Meadow Books order 34"
+    },
+    {
+      "id": "bank_35",
+      "currency": "USD",
+      "amount_minor": "14483",
+      "day": "2026-01-16",
+      "description": "POS* Synthetic Cedar Market order 35 #12345"
+    },
+    {
+      "id": "bank_36",
+      "currency": "USD",
+      "amount_minor": "14630",
+      "day": "2026-01-17",
+      "description": "Synthetic Beacon Transit order 36"
+    },
+    {
+      "id": "bank_37",
+      "currency": "USD",
+      "amount_minor": "14768",
+      "day": "2026-01-18",
+      "description": "Synthetic Aster Studio order 37"
+    },
+    {
+      "id": "bank_38",
+      "currency": "USD",
+      "amount_minor": "14897",
+      "day": "2026-01-19",
+      "description": "Synthetic Lumen Cycles order 38"
+    },
+    {
+      "id": "bank_39",
+      "currency": "USD",
+      "amount_minor": "15024",
+      "day": "2026-01-20",
+      "description": "Synthetic Harbor Garden order 39"
+    },
+    {
+      "id": "bank_40",
+      "currency": "USD",
+      "amount_minor": "15179",
+      "day": "2026-01-01",
+      "description": "Synthetic Juniper Cafe order 40"
+    },
+    {
+      "id": "bank_41",
+      "currency": "USD",
+      "amount_minor": "15251",
+      "day": "2026-01-02",
+      "description": "Synthetic Orion Tools order 41"
+    },
+    {
+      "id": "bank_42",
+      "currency": "USD",
+      "amount_minor": "15343",
+      "day": "2026-01-03",
+      "description": "POS* Synthetic Meadow Books order 42 #12345"
+    },
+    {
+      "id": "bank_43",
+      "currency": "USD",
+      "amount_minor": "15480",
+      "day": "2026-01-04",
+      "description": "Synthetic Cedar Market order 43"
+    },
+    {
+      "id": "bank_44",
+      "currency": "USD",
+      "amount_minor": "15632",
+      "day": "2026-01-05",
+      "description": "Synthetic Beacon Transit order 44"
+    },
+    {
+      "id": "bank_45",
+      "currency": "USD",
+      "amount_minor": "15727",
+      "day": "2026-01-06",
+      "description": "Synthetic Aster Studio order 45"
+    },
+    {
+      "id": "bank_46",
+      "currency": "USD",
+      "amount_minor": "15918",
+      "day": "2026-01-07",
+      "description": "Synthetic Lumen Cycles order 46"
+    },
+    {
+      "id": "bank_47",
+      "currency": "USD",
+      "amount_minor": "16028",
+      "day": "2026-01-08",
+      "description": "Synthetic Harbor Garden order 47"
+    },
+    {
+      "id": "bank_48",
+      "currency": "USD",
+      "amount_minor": "16176",
+      "day": "2026-01-09",
+      "description": "Synthetic Juniper Cafe order 48"
+    },
+    {
+      "id": "bank_49",
+      "currency": "USD",
+      "amount_minor": "16261",
+      "day": "2026-01-10",
+      "description": "POS* Synthetic Orion Tools order 49 #12345"
+    },
+    {
+      "id": "bank_50",
+      "currency": "USD",
+      "amount_minor": "16371",
+      "day": "2026-01-11",
+      "description": "Synthetic Meadow Books order 50"
+    },
+    {
+      "id": "bank_51",
+      "currency": "USD",
+      "amount_minor": "16504",
+      "day": "2026-01-12",
+      "description": "Synthetic Cedar Market order 51"
+    },
+    {
+      "id": "bank_52",
+      "currency": "USD",
+      "amount_minor": "16605",
+      "day": "2026-01-13",
+      "description": "Synthetic Beacon Transit order 52"
+    },
+    {
+      "id": "bank_53",
+      "currency": "USD",
+      "amount_minor": "16758",
+      "day": "2026-01-14",
+      "description": "Synthetic Aster Studio order 53"
+    },
+    {
+      "id": "bank_54",
+      "currency": "USD",
+      "amount_minor": "16891",
+      "day": "2026-01-15",
+      "description": "Synthetic Lumen Cycles order 54"
+    },
+    {
+      "id": "bank_55",
+      "currency": "USD",
+      "amount_minor": "16891",
+      "day": "2026-01-15",
+      "description": "Synthetic Lumen Cycles order 54"
+    },
+    {
+      "id": "bank_56",
+      "currency": "USD",
+      "amount_minor": "17207",
+      "day": "2026-01-17",
+      "description": "POS* Synthetic Junipre Cafe order 56 #12345"
+    },
+    {
+      "id": "bank_57",
+      "currency": "USD",
+      "amount_minor": "17258",
+      "day": "2026-01-18",
+      "description": "Synthetic Orion Tools order 57"
+    },
+    {
+      "id": "bank_58",
+      "currency": "USD",
+      "amount_minor": "17453",
+      "day": "2026-01-19",
+      "description": "Synthetic Meadow Books order 58"
+    },
+    {
+      "id": "bank_59",
+      "currency": "USD",
+      "amount_minor": "17551",
+      "day": "2026-01-20",
+      "description": "Synthetic Cedar Market order 59"
+    },
+    {
+      "id": "bank_60",
+      "currency": "USD",
+      "amount_minor": "17653",
+      "day": "2026-01-01",
+      "description": "Synthetic Beacon Transit order 60"
+    },
+    {
+      "id": "bank_61",
+      "currency": "USD",
+      "amount_minor": "17778",
+      "day": "2026-01-02",
+      "description": "Synthetic Aster Studio order 61"
+    },
+    {
+      "id": "bank_62",
+      "currency": "USD",
+      "amount_minor": "17886",
+      "day": "2026-01-03",
+      "description": "Synthetic Lumen Cycles order 62"
+    },
+    {
+      "id": "bank_63",
+      "currency": "USD",
+      "amount_minor": "18098",
+      "day": "2026-01-04",
+      "description": "POS* Synthetic Harbor Garden order 63 #12345"
+    },
+    {
+      "id": "bank_64",
+      "currency": "USD",
+      "amount_minor": "18138",
+      "day": "2026-01-05",
+      "description": "Synthetic Juniper Cafe order 64"
+    },
+    {
+      "id": "bank_65",
+      "currency": "USD",
+      "amount_minor": "18347",
+      "day": "2026-01-06",
+      "description": "Synthetic Orion Tools order 65"
+    },
+    {
+      "id": "bank_66",
+      "currency": "USD",
+      "amount_minor": "18462",
+      "day": "2026-01-07",
+      "description": "Synthetic Meadow Books order 66"
+    },
+    {
+      "id": "bank_67",
+      "currency": "USD",
+      "amount_minor": "18552",
+      "day": "2026-01-08",
+      "description": "Synthetic Cedar Market order 67"
+    },
+    {
+      "id": "bank_68",
+      "currency": "USD",
+      "amount_minor": "18707",
+      "day": "2026-01-09",
+      "description": "Synthetic Beacon Transit order 68"
+    },
+    {
+      "id": "bank_69",
+      "currency": "USD",
+      "amount_minor": "18793",
+      "day": "2026-01-10",
+      "description": "Synthetic Aster Studio order 69"
+    },
+    {
+      "id": "bank_70",
+      "currency": "USD",
+      "amount_minor": "18901",
+      "day": "2026-01-11",
+      "description": "POS* Synthetic Lumen Cycles order 70 #12345"
+    },
+    {
+      "id": "bank_71",
+      "currency": "USD",
+      "amount_minor": "19067",
+      "day": "2026-01-12",
+      "description": "Synthetic Harbor Garden order 71"
+    },
+    {
+      "id": "bank_72",
+      "currency": "USD",
+      "amount_minor": "19155",
+      "day": "2026-01-13",
+      "description": "Synthetic Juniper Cafe order 72"
+    },
+    {
+      "id": "bank_73",
+      "currency": "USD",
+      "amount_minor": "19295",
+      "day": "2026-01-14",
+      "description": "Synthetic Orion Tools order 73"
+    },
+    {
+      "id": "bank_74",
+      "currency": "USD",
+      "amount_minor": "19458",
+      "day": "2026-01-15",
+      "description": "Synthetic Meadow Books order 74"
+    },
+    {
+      "id": "bank_75",
+      "currency": "USD",
+      "amount_minor": "19594",
+      "day": "2026-01-16",
+      "description": "Synthetic Cedar Market order 75"
+    },
+    {
+      "id": "bank_76",
+      "currency": "USD",
+      "amount_minor": "19701",
+      "day": "2026-01-17",
+      "description": "Synthetic Beacon Transit order 76"
+    },
+    {
+      "id": "bank_77",
+      "currency": "USD",
+      "amount_minor": "19799",
+      "day": "2026-01-18",
+      "description": "POS* Synthetic Aster Studio order 77 #12345"
+    },
+    {
+      "id": "bank_78",
+      "currency": "USD",
+      "amount_minor": "19928",
+      "day": "2026-01-19",
+      "description": "Synthetic Lumen Cycles order 78"
+    },
+    {
+      "id": "bank_79",
+      "currency": "USD",
+      "amount_minor": "20102",
+      "day": "2026-01-20",
+      "description": "Synthetic Harbor Garden order 79"
+    },
+    {
+      "id": "bank_80",
+      "currency": "USD",
+      "amount_minor": "20248",
+      "day": "2026-01-01",
+      "description": "Synthetic Juniper Cafe order 80"
+    },
+    {
+      "id": "bank_81",
+      "currency": "USD",
+      "amount_minor": "20368",
+      "day": "2026-01-02",
+      "description": "Synthetic Orion Tools order 81"
+    },
+    {
+      "id": "bank_82",
+      "currency": "USD",
+      "amount_minor": "20483",
+      "day": "2026-01-03",
+      "description": "Synthetic Meadow Books order 82"
+    },
+    {
+      "id": "bank_83",
+      "currency": "USD",
+      "amount_minor": "20624",
+      "day": "2026-01-04",
+      "description": "Synthetic Cedar Market order 83"
+    },
+    {
+      "id": "bank_84",
+      "currency": "USD",
+      "amount_minor": "20708",
+      "day": "2026-01-05",
+      "description": "POS* Synthetic Beacon Transit order 84 #12345"
+    },
+    {
+      "id": "bank_85",
+      "currency": "USD",
+      "amount_minor": "20810",
+      "day": "2026-01-06",
+      "description": "Synthetic Aster Studio order 85"
+    },
+    {
+      "id": "bank_86",
+      "currency": "USD",
+      "amount_minor": "20934",
+      "day": "2026-01-07",
+      "description": "Synthetic Lumen Cycles order 86"
+    },
+    {
+      "id": "bank_87",
+      "currency": "USD",
+      "amount_minor": "21102",
+      "day": "2026-01-08",
+      "description": "Synthetic Harbor Garden order 87"
+    },
+    {
+      "id": "bank_88",
+      "currency": "USD",
+      "amount_minor": "21241",
+      "day": "2026-01-09",
+      "description": "Synthetic Juniper Cafe order 88"
+    },
+    {
+      "id": "bank_89",
+      "currency": "USD",
+      "amount_minor": "21401",
+      "day": "2026-01-10",
+      "description": "Synthetic Orion Tools order 89"
+    },
+    {
+      "id": "bank_90",
+      "currency": "USD",
+      "amount_minor": "21472",
+      "day": "2026-01-11",
+      "description": "Synthetic Meadow Books order 90"
+    },
+    {
+      "id": "bank_91",
+      "currency": "USD",
+      "amount_minor": "21631",
+      "day": "2026-01-12",
+      "description": "POS* Synthetic Cedar Market order 91 #12345"
+    },
+    {
+      "id": "bank_92",
+      "currency": "USD",
+      "amount_minor": "21727",
+      "day": "2026-01-13",
+      "description": "Synthetic Beacon Transit order 92"
+    },
+    {
+      "id": "bank_93",
+      "currency": "USD",
+      "amount_minor": "21815",
+      "day": "2026-01-14",
+      "description": "Synthetic Aster Studio order 93"
+    },
+    {
+      "id": "bank_94",
+      "currency": "USD",
+      "amount_minor": "21945",
+      "day": "2026-01-15",
+      "description": "Synthetic Lumen Cycles order 94"
+    },
+    {
+      "id": "bank_95",
+      "currency": "USD",
+      "amount_minor": "22147",
+      "day": "2026-01-16",
+      "description": "Synthetic Harbor Garden order 95"
+    },
+    {
+      "id": "bank_96",
+      "currency": "USD",
+      "amount_minor": "22289",
+      "day": "2026-01-17",
+      "description": "Synthetic Juniper Cafe order 96"
+    },
+    {
+      "id": "bank_97",
+      "currency": "USD",
+      "amount_minor": "22398",
+      "day": "2026-01-18",
+      "description": "Synthetic Orion Tools order 97"
+    },
+    {
+      "id": "bank_98",
+      "currency": "USD",
+      "amount_minor": "22462",
+      "day": "2026-01-19",
+      "description": "POS* Synthetic Meadow Books order 98 #12345"
+    },
+    {
+      "id": "bank_99",
+      "currency": "USD",
+      "amount_minor": "22611",
+      "day": "2026-01-20",
+      "description": "Synthetic Cedar Market order 99"
+    },
+    {
+      "id": "bank_100",
+      "currency": "USD",
+      "amount_minor": "22728",
+      "day": "2026-01-01",
+      "description": "Synthetic Beacon Transit order 100"
+    },
+    {
+      "id": "bank_101",
+      "currency": "USD",
+      "amount_minor": "22875",
+      "day": "2026-01-02",
+      "description": "Synthetic Aster Studio order 101"
+    },
+    {
+      "id": "bank_102",
+      "currency": "USD",
+      "amount_minor": "23038",
+      "day": "2026-01-03",
+      "description": "Synthetic Lumen Cycles order 102"
+    },
+    {
+      "id": "bank_103",
+      "currency": "USD",
+      "amount_minor": "23172",
+      "day": "2026-01-04",
+      "description": "Synthetic Harbor Garden order 103"
+    },
+    {
+      "id": "bank_104",
+      "currency": "USD",
+      "amount_minor": "23227",
+      "day": "2026-01-05",
+      "description": "Synthetic Juniper Cafe order 104"
+    },
+    {
+      "id": "bank_105",
+      "currency": "USD",
+      "amount_minor": "23366",
+      "day": "2026-01-06",
+      "description": "POS* Synthetic Orion Tools order 105 #12345"
+    },
+    {
+      "id": "bank_106",
+      "currency": "USD",
+      "amount_minor": "23515",
+      "day": "2026-01-07",
+      "description": "Synthetic Meadow Books order 106"
+    },
+    {
+      "id": "bank_107",
+      "currency": "USD",
+      "amount_minor": "23615",
+      "day": "2026-01-08",
+      "description": "Synthetic Cedar Market order 107"
+    },
+    {
+      "id": "bank_108",
+      "currency": "USD",
+      "amount_minor": "23756",
+      "day": "2026-01-09",
+      "description": "Synthetic Beacon Transit order 108"
+    },
+    {
+      "id": "bank_109",
+      "currency": "USD",
+      "amount_minor": "23844",
+      "day": "2026-01-10",
+      "description": "Synthetic Aster Studio order 109"
+    },
+    {
+      "id": "bank_110",
+      "currency": "USD",
+      "amount_minor": "24034",
+      "day": "2026-01-11",
+      "description": "Synthetic Lumen Cycles order 110"
+    },
+    {
+      "id": "bank_111",
+      "currency": "USD",
+      "amount_minor": "24133",
+      "day": "2026-01-12",
+      "description": "Synthetic Harbor Garden order 111"
+    },
+    {
+      "id": "bank_112",
+      "currency": "USD",
+      "amount_minor": "24271",
+      "day": "2026-01-13",
+      "description": "POS* Synthetic Junipre Cafe order 112 #12345"
+    },
+    {
+      "id": "bank_113",
+      "currency": "USD",
+      "amount_minor": "24376",
+      "day": "2026-01-14",
+      "description": "Synthetic Orion Tools order 113"
+    },
+    {
+      "id": "bank_114",
+      "currency": "USD",
+      "amount_minor": "24537",
+      "day": "2026-01-15",
+      "description": "Synthetic Meadow Books order 114"
+    },
+    {
+      "id": "bank_115",
+      "currency": "USD",
+      "amount_minor": "24675",
+      "day": "2026-01-16",
+      "description": "Synthetic Cedar Market order 115"
+    },
+    {
+      "id": "bank_116",
+      "currency": "USD",
+      "amount_minor": "24787",
+      "day": "2026-01-17",
+      "description": "Synthetic Beacon Transit order 116"
+    },
+    {
+      "id": "bank_117",
+      "currency": "USD",
+      "amount_minor": "24919",
+      "day": "2026-01-18",
+      "description": "Synthetic Aster Studio order 117"
+    },
+    {
+      "id": "bank_118",
+      "currency": "USD",
+      "amount_minor": "25009",
+      "day": "2026-01-19",
+      "description": "Synthetic Lumen Cycles order 118"
+    },
+    {
+      "id": "bank_119",
+      "currency": "USD",
+      "amount_minor": "25150",
+      "day": "2026-01-20",
+      "description": "POS* Synthetic Harbor Garden order 119 #12345"
+    },
+    {
+      "id": "bank_120",
+      "currency": "USD",
+      "amount_minor": "25281",
+      "day": "2026-01-01",
+      "description": "Synthetic Juniper Cafe order 120"
+    },
+    {
+      "id": "bank_121",
+      "currency": "USD",
+      "amount_minor": "25460",
+      "day": "2026-01-02",
+      "description": "Synthetic Orion Tools order 121"
+    },
+    {
+      "id": "bank_122",
+      "currency": "USD",
+      "amount_minor": "25517",
+      "day": "2026-01-03",
+      "description": "Synthetic Meadow Books order 122"
+    },
+    {
+      "id": "bank_123",
+      "currency": "USD",
+      "amount_minor": "25713",
+      "day": "2026-01-04",
+      "description": "Synthetic Cedar Market order 123"
+    },
+    {
+      "id": "bank_124",
+      "currency": "USD",
+      "amount_minor": "25842",
+      "day": "2026-01-05",
+      "description": "Synthetic Beacon Transit order 124"
+    },
+    {
+      "id": "bank_125",
+      "currency": "USD",
+      "amount_minor": "25932",
+      "day": "2026-01-06",
+      "description": "Synthetic Aster Studio order 125"
+    },
+    {
+      "id": "bank_126",
+      "currency": "USD",
+      "amount_minor": "26094",
+      "day": "2026-01-07",
+      "description": "POS* Synthetic Lumen Cycles order 126 #12345"
+    },
+    {
+      "id": "bank_127",
+      "currency": "USD",
+      "amount_minor": "26131",
+      "day": "2026-01-08",
+      "description": "Synthetic Harbor Garden order 127"
+    },
+    {
+      "id": "bank_128",
+      "currency": "USD",
+      "amount_minor": "26281",
+      "day": "2026-01-09",
+      "description": "Synthetic Juniper Cafe order 128"
+    },
+    {
+      "id": "bank_129",
+      "currency": "USD",
+      "amount_minor": "26437",
+      "day": "2026-01-10",
+      "description": "Synthetic Orion Tools order 129"
+    },
+    {
+      "id": "bank_130",
+      "currency": "USD",
+      "amount_minor": "26560",
+      "day": "2026-01-11",
+      "description": "Synthetic Meadow Books order 130"
+    },
+    {
+      "id": "bank_131",
+      "currency": "USD",
+      "amount_minor": "26732",
+      "day": "2026-01-12",
+      "description": "Synthetic Cedar Market order 131"
+    },
+    {
+      "id": "bank_132",
+      "currency": "USD",
+      "amount_minor": "26861",
+      "day": "2026-01-13",
+      "description": "Synthetic Beacon Transit order 132"
+    },
+    {
+      "id": "bank_133",
+      "currency": "USD",
+      "amount_minor": "26961",
+      "day": "2026-01-14",
+      "description": "POS* Synthetic Aster Studio order 133 #12345"
+    },
+    {
+      "id": "bank_134",
+      "currency": "USD",
+      "amount_minor": "27099",
+      "day": "2026-01-15",
+      "description": "Synthetic Lumen Cycles order 134"
+    },
+    {
+      "id": "bank_135",
+      "currency": "USD",
+      "amount_minor": "27175",
+      "day": "2026-01-16",
+      "description": "Synthetic Harbor Garden order 135"
+    },
+    {
+      "id": "bank_136",
+      "currency": "USD",
+      "amount_minor": "27328",
+      "day": "2026-01-17",
+      "description": "Synthetic Juniper Cafe order 136"
+    },
+    {
+      "id": "bank_137",
+      "currency": "USD",
+      "amount_minor": "27467",
+      "day": "2026-01-18",
+      "description": "Synthetic Orion Tools order 137"
+    },
+    {
+      "id": "bank_138",
+      "currency": "USD",
+      "amount_minor": "27530",
+      "day": "2026-01-19",
+      "description": "Synthetic Meadow Books order 138"
+    },
+    {
+      "id": "bank_139",
+      "currency": "USD",
+      "amount_minor": "27686",
+      "day": "2026-01-20",
+      "description": "Synthetic Cedar Market order 139"
+    },
+    {
+      "id": "bank_140",
+      "currency": "USD",
+      "amount_minor": "27825",
+      "day": "2026-01-01",
+      "description": "POS* Synthetic Beacon Transit order 140 #12345"
+    },
+    {
+      "id": "bank_141",
+      "currency": "USD",
+      "amount_minor": "27983",
+      "day": "2026-01-02",
+      "description": "Synthetic Aster Studio order 141"
+    },
+    {
+      "id": "bank_142",
+      "currency": "USD",
+      "amount_minor": "28131",
+      "day": "2026-01-03",
+      "description": "Synthetic Lumen Cycles order 142"
+    },
+    {
+      "id": "bank_143",
+      "currency": "USD",
+      "amount_minor": "28164",
+      "day": "2026-01-04",
+      "description": "Synthetic Harbor Garden order 143"
+    },
+    {
+      "id": "bank_144",
+      "currency": "USD",
+      "amount_minor": "28345",
+      "day": "2026-01-05",
+      "description": "Synthetic Juniper Cafe order 144"
+    },
+    {
+      "id": "bank_145",
+      "currency": "USD",
+      "amount_minor": "28445",
+      "day": "2026-01-06",
+      "description": "Synthetic Orion Tools order 145"
+    },
+    {
+      "id": "bank_146",
+      "currency": "USD",
+      "amount_minor": "28606",
+      "day": "2026-01-07",
+      "description": "Synthetic Meadow Books order 146"
+    },
+    {
+      "id": "bank_147",
+      "currency": "USD",
+      "amount_minor": "28735",
+      "day": "2026-01-08",
+      "description": "POS* Synthetic Cedar Market order 147 #12345"
+    },
+    {
+      "id": "bank_148",
+      "currency": "USD",
+      "amount_minor": "28842",
+      "day": "2026-01-09",
+      "description": "Synthetic Beacon Transit order 148"
+    },
+    {
+      "id": "bank_149",
+      "currency": "USD",
+      "amount_minor": "28948",
+      "day": "2026-01-10",
+      "description": "Synthetic Aster Studio order 149"
+    },
+    {
+      "id": "bank_150",
+      "currency": "USD",
+      "amount_minor": "29122",
+      "day": "2026-01-11",
+      "description": "Synthetic Lumen Cycles order 150"
+    },
+    {
+      "id": "bank_151",
+      "currency": "USD",
+      "amount_minor": "29227",
+      "day": "2026-01-12",
+      "description": "Synthetic Harbor Garden order 151"
+    },
+    {
+      "id": "bank_152",
+      "currency": "USD",
+      "amount_minor": "29307",
+      "day": "2026-01-13",
+      "description": "Synthetic Juniper Cafe order 152"
+    },
+    {
+      "id": "bank_153",
+      "currency": "USD",
+      "amount_minor": "29515",
+      "day": "2026-01-14",
+      "description": "Synthetic Orion Tools order 153"
+    },
+    {
+      "id": "bank_154",
+      "currency": "USD",
+      "amount_minor": "29631",
+      "day": "2026-01-15",
+      "description": "POS* Synthetic Meadow Books order 154 #12345"
+    },
+    {
+      "id": "bank_155",
+      "currency": "USD",
+      "amount_minor": "29775",
+      "day": "2026-01-16",
+      "description": "Synthetic Cedar Market order 155"
+    },
+    {
+      "id": "bank_156",
+      "currency": "USD",
+      "amount_minor": "29885",
+      "day": "2026-01-17",
+      "description": "Synthetic Beacon Transit order 156"
+    },
+    {
+      "id": "bank_157",
+      "currency": "USD",
+      "amount_minor": "29992",
+      "day": "2026-01-18",
+      "description": "Synthetic Aster Studio order 157"
+    },
+    {
+      "id": "bank_158",
+      "currency": "USD",
+      "amount_minor": "30165",
+      "day": "2026-01-19",
+      "description": "Synthetic Lumen Cycles order 158"
+    },
+    {
+      "id": "bank_159",
+      "currency": "USD",
+      "amount_minor": "30291",
+      "day": "2026-01-20",
+      "description": "Synthetic Harbor Garden order 159"
+    },
+    {
+      "id": "bank_160",
+      "currency": "USD",
+      "amount_minor": "30382",
+      "day": "2026-01-01",
+      "description": "Synthetic Juniper Cafe order 160"
+    },
+    {
+      "id": "bank_161",
+      "currency": "USD",
+      "amount_minor": "30525",
+      "day": "2026-01-02",
+      "description": "POS* Synthetic Orion Tools order 161 #12345"
+    },
+    {
+      "id": "bank_162",
+      "currency": "USD",
+      "amount_minor": "30579",
+      "day": "2026-01-03",
+      "description": "Synthetic Meadow Books order 162"
+    },
+    {
+      "id": "bank_163",
+      "currency": "USD",
+      "amount_minor": "30755",
+      "day": "2026-01-04",
+      "description": "Synthetic Cedar Market order 163"
+    },
+    {
+      "id": "bank_164",
+      "currency": "USD",
+      "amount_minor": "30889",
+      "day": "2026-01-05",
+      "description": "Synthetic Beacon Transit order 164"
+    },
+    {
+      "id": "bank_165",
+      "currency": "USD",
+      "amount_minor": "30979",
+      "day": "2026-01-06",
+      "description": "Synthetic Aster Studio order 165"
+    },
+    {
+      "id": "bank_166",
+      "currency": "USD",
+      "amount_minor": "31156",
+      "day": "2026-01-07",
+      "description": "Synthetic Lumen Cycles order 166"
+    },
+    {
+      "id": "bank_167",
+      "currency": "USD",
+      "amount_minor": "31211",
+      "day": "2026-01-08",
+      "description": "Synthetic Harbor Garden order 167"
+    },
+    {
+      "id": "bank_168",
+      "currency": "USD",
+      "amount_minor": "31430",
+      "day": "2026-01-09",
+      "description": "POS* Synthetic Junipre Cafe order 168 #12345"
+    },
+    {
+      "id": "bank_169",
+      "currency": "USD",
+      "amount_minor": "31507",
+      "day": "2026-01-10",
+      "description": "Synthetic Orion Tools order 169"
+    },
+    {
+      "id": "bank_170",
+      "currency": "USD",
+      "amount_minor": "31625",
+      "day": "2026-01-11",
+      "description": "Synthetic Meadow Books order 170"
+    },
+    {
+      "id": "bank_171",
+      "currency": "USD",
+      "amount_minor": "31774",
+      "day": "2026-01-12",
+      "description": "Synthetic Cedar Market order 171"
+    },
+    {
+      "id": "bank_172",
+      "currency": "USD",
+      "amount_minor": "31901",
+      "day": "2026-01-13",
+      "description": "Synthetic Beacon Transit order 172"
+    },
+    {
+      "id": "bank_173",
+      "currency": "USD",
+      "amount_minor": "31974",
+      "day": "2026-01-14",
+      "description": "Synthetic Aster Studio order 173"
+    },
+    {
+      "id": "bank_174",
+      "currency": "USD",
+      "amount_minor": "32138",
+      "day": "2026-01-15",
+      "description": "Synthetic Lumen Cycles order 174"
+    },
+    {
+      "id": "bank_175",
+      "currency": "USD",
+      "amount_minor": "32283",
+      "day": "2026-01-16",
+      "description": "POS* Synthetic Harbor Garden order 175 #12345"
+    },
+    {
+      "id": "bank_176",
+      "currency": "USD",
+      "amount_minor": "32358",
+      "day": "2026-01-17",
+      "description": "Synthetic Juniper Cafe order 176"
+    },
+    {
+      "id": "bank_177",
+      "currency": "USD",
+      "amount_minor": "32493",
+      "day": "2026-01-18",
+      "description": "Synthetic Orion Tools order 177"
+    },
+    {
+      "id": "bank_178",
+      "currency": "USD",
+      "amount_minor": "32616",
+      "day": "2026-01-19",
+      "description": "Synthetic Meadow Books order 178"
+    },
+    {
+      "id": "bank_179",
+      "currency": "USD",
+      "amount_minor": "32758",
+      "day": "2026-01-20",
+      "description": "Synthetic Cedar Market order 179"
+    },
+    {
+      "id": "bank_180",
+      "currency": "USD",
+      "amount_minor": "32888",
+      "day": "2026-01-01",
+      "description": "Synthetic Beacon Transit order 180"
+    },
+    {
+      "id": "bank_181",
+      "currency": "USD",
+      "amount_minor": "33043",
+      "day": "2026-01-02",
+      "description": "Synthetic Aster Studio order 181"
+    },
+    {
+      "id": "bank_182",
+      "currency": "USD",
+      "amount_minor": "33157",
+      "day": "2026-01-03",
+      "description": "Synthetic Lumen Cycles order 182"
+    },
+    {
+      "id": "bank_183",
+      "currency": "USD",
+      "amount_minor": "33338",
+      "day": "2026-01-04",
+      "description": "Synthetic Harbor Garden order 183"
+    },
+    {
+      "id": "bank_184",
+      "currency": "USD",
+      "amount_minor": "33434",
+      "day": "2026-01-05",
+      "description": "Synthetic Juniper Cafe order 184"
+    },
+    {
+      "id": "bank_185",
+      "currency": "USD",
+      "amount_minor": "33554",
+      "day": "2026-01-06",
+      "description": "Synthetic Orion Tools order 185"
+    },
+    {
+      "id": "bank_186",
+      "currency": "USD",
+      "amount_minor": "33658",
+      "day": "2026-01-07",
+      "description": "Synthetic Meadow Books order 186"
+    },
+    {
+      "id": "bank_187",
+      "currency": "USD",
+      "amount_minor": "33819",
+      "day": "2026-01-08",
+      "description": "Synthetic Cedar Market order 187"
+    },
+    {
+      "id": "bank_188",
+      "currency": "USD",
+      "amount_minor": "33903",
+      "day": "2026-01-09",
+      "description": "Synthetic Beacon Transit order 188"
+    },
+    {
+      "id": "bank_189",
+      "currency": "USD",
+      "amount_minor": "34094",
+      "day": "2026-01-10",
+      "description": "Synthetic Aster Studio order 189"
+    },
+    {
+      "id": "bank_190",
+      "currency": "USD",
+      "amount_minor": "34218",
+      "day": "2026-01-11",
+      "description": "Synthetic Lumen Cycles order 190"
+    },
+    {
+      "id": "bank_191",
+      "currency": "USD",
+      "amount_minor": "34312",
+      "day": "2026-01-12",
+      "description": "Synthetic Harbor Garden order 191"
+    },
+    {
+      "id": "bank_192",
+      "currency": "USD",
+      "amount_minor": "34449",
+      "day": "2026-01-13",
+      "description": "Synthetic Juniper Cafe order 192"
+    },
+    {
+      "id": "bank_193",
+      "currency": "USD",
+      "amount_minor": "34585",
+      "day": "2026-01-14",
+      "description": "Synthetic Orion Tools order 193"
+    },
+    {
+      "id": "bank_194",
+      "currency": "USD",
+      "amount_minor": "34696",
+      "day": "2026-01-15",
+      "description": "Synthetic Meadow Books order 194"
+    },
+    {
+      "id": "bank_195",
+      "currency": "USD",
+      "amount_minor": "34792",
+      "day": "2026-01-16",
+      "description": "Synthetic Cedar Market order 195"
+    },
+    {
+      "id": "bank_196",
+      "currency": "USD",
+      "amount_minor": "34906",
+      "day": "2026-01-17",
+      "description": "Synthetic Beacon Transit order 196"
+    },
+    {
+      "id": "bank_197",
+      "currency": "USD",
+      "amount_minor": "35042",
+      "day": "2026-01-18",
+      "description": "Synthetic Aster Studio order 197"
+    },
+    {
+      "id": "bank_198",
+      "currency": "USD",
+      "amount_minor": "35156",
+      "day": "2026-01-19",
+      "description": "Synthetic Lumen Cycles order 198"
+    },
+    {
+      "id": "bank_199",
+      "currency": "USD",
+      "amount_minor": "35307",
+      "day": "2026-01-20",
+      "description": "Synthetic Harbor Garden order 199"
+    }
+  ],
+  "truth": {
+    "bank_0": "2a501935-11ea-414e-8e34-0996f5f7803a",
+    "bank_1": "36d92647-9109-4fe1-978f-b3f340014440",
+    "bank_2": "a7e3e4d2-7aff-439c-b4d3-50acf793a1ed",
+    "bank_3": "3e5e3448-7d4a-4b21-9cdd-fda5ca587c2f",
+    "bank_4": "bc997ee4-e115-4799-88b3-17776c69cf6c",
+    "bank_5": "61465441-87bf-419f-9e53-6efb6905dbdb",
+    "bank_6": "df93ff3b-0337-480d-aa78-2e11982e42fe",
+    "bank_7": "2c082ca0-c0c1-4d95-8ebe-cb87e359df28",
+    "bank_8": "4af4fd7c-c47b-4302-9b06-757c78cef93a",
+    "bank_9": "eb5fcdb1-65a8-49e2-8ab5-cbf3843d794a",
+    "bank_10": "59b45065-b7a9-40b8-9ca1-cabaac0b476c",
+    "bank_11": "5e547f70-13fe-447a-8229-b99448c95dec",
+    "bank_12": "40d48a68-7697-495c-b251-1e102e514c45",
+    "bank_13": "79b05e2a-7e4b-461a-9b93-f190165f89a0",
+    "bank_14": "9ed16bea-777e-4028-9350-8ad1c26bb95b",
+    "bank_15": "b88a4e8a-3b65-4a72-bef0-f81539a26844",
+    "bank_16": "7a13a87c-bcff-4b73-8417-b85df5928873",
+    "bank_17": "b212d0ca-c7ed-4339-8f8b-ee1da7aa0ab4",
+    "bank_18": "215ccdca-d4ce-4e71-810b-eb99af7a77cd",
+    "bank_19": "354ad07d-2eef-4a88-b9a2-db5e6a36237a",
+    "bank_20": "f5d64fd2-64bf-48f4-9e18-0b16d356c52c",
+    "bank_21": "adc5d07e-617b-42ad-a82e-7a634a37033b",
+    "bank_22": "41075f6e-3363-4924-93f7-48fc43c6fcde",
+    "bank_23": "84e0b8f5-d6a6-40c9-85ce-21a4d4f65cc4",
+    "bank_24": "b7ce4624-d1c0-47dd-9567-375c75b03ca6",
+    "bank_25": "c5b74b5b-685b-4417-b742-704f0819cd4b",
+    "bank_26": "26a601f7-15ad-4666-b57a-fda052231a02",
+    "bank_27": "350a428f-50a6-4f71-91f2-4457206b82e5",
+    "bank_28": "e2885689-87ec-4386-b060-72cf231ba24a",
+    "bank_29": "86db163f-5f01-47ec-9a78-21496fa26eae",
+    "bank_30": "20ef092b-445f-4601-9b68-980a7975a7ce",
+    "bank_31": "97866e21-d81a-44bc-a294-33182a0aa26b",
+    "bank_32": "2f788481-4727-4faf-97c2-5c884b816ff9",
+    "bank_33": "44b5d994-3428-4576-a977-bb81a5a0e8e9",
+    "bank_34": "13364944-56e5-4733-9c2a-bb16de1a32af",
+    "bank_35": "d2d01746-5a60-4de5-b591-67d25844e6f4",
+    "bank_36": "e591d8aa-b106-4944-8afa-b75be442182f",
+    "bank_37": "a4d71fb9-c76e-44f3-a55b-dcd8300746b2",
+    "bank_38": "1af75cff-d3c6-45c8-9f97-65f18b73271e",
+    "bank_39": "ad2fb4ca-3f27-42f6-b87e-baedfe556d02",
+    "bank_40": "f18c0e55-5a70-4bb4-b47c-cfbc1e246400",
+    "bank_41": "342ac80d-515b-4667-a5c2-efe8c3d54f97",
+    "bank_42": "dc16e918-decf-4169-8baa-f6d3a1112f88",
+    "bank_43": "d20e3c93-5886-469a-b7c1-3bb81df9820e",
+    "bank_44": "12daf260-58bd-4af4-8f99-34ef364157a1",
+    "bank_45": "12f53885-8ef7-4276-a62d-69fdd0c59354",
+    "bank_46": "89516519-e2fd-423d-a4fe-20213602c412",
+    "bank_47": "b4de9fee-21dd-4d4c-b9bd-9b75a0508529",
+    "bank_48": "86f5cede-3dbb-419e-836e-f81f17ecd6e8",
+    "bank_49": "485c5b60-536a-498d-b7c2-aed5bebde42a",
+    "bank_50": "5cac1c5b-1ede-439b-a7fa-97e749af398e",
+    "bank_51": "739dbe57-03dc-48fa-8831-e3289d3c5bf0",
+    "bank_52": "8f4b1eec-141e-492c-ab1c-d0f4079f4e46",
+    "bank_53": "677e5c97-1ef2-4d75-89eb-0f0f515b2489",
+    "bank_54": "36c1854e-6146-41c3-8549-7edec9c5a4de",
+    "bank_55": null,
+    "bank_56": "0badee5c-5cae-4b38-98a6-42421d01f8a4",
+    "bank_57": "967204bc-4621-435c-afac-d559a3505d8a",
+    "bank_58": "7da9d4d4-c018-45ef-8706-9282a8cd93d7",
+    "bank_59": "2a1d773e-549e-4564-9ced-872d84e0ffaf",
+    "bank_60": "246e4b48-6f6d-4fbf-bc04-082f6335fb3e",
+    "bank_61": "9c9c7582-497d-46ba-b89b-0b31b867581c",
+    "bank_62": "861056e1-4308-419d-9fe2-3d14beed1eac",
+    "bank_63": "315eb798-bd64-42f2-895f-3e7319012635",
+    "bank_64": "dd858efb-e328-4814-b41f-b75f224e9ed6",
+    "bank_65": "fa4fb4dc-cefb-43e1-babb-ef3e1e35a73e",
+    "bank_66": "ad03ed19-2ace-4954-87ee-fe4574d7dffe",
+    "bank_67": "9544c6d2-f70b-4473-9621-754650c82f03",
+    "bank_68": "1ba89683-a8c0-4962-81d1-5593c68c8ad4",
+    "bank_69": "fd18924a-d762-4dd6-ad28-70b6e55e838c",
+    "bank_70": "e1e20b21-8f42-4e5d-81f4-63d47bec6a95",
+    "bank_71": "46fe0b8f-eb2e-48d2-b719-0af89bed1099",
+    "bank_72": "49d864e0-e65e-407b-b841-3300987396bd",
+    "bank_73": "00ed9218-edbf-4ba8-abee-9ea3a59f0274",
+    "bank_74": "18da7b2c-095f-4e39-be01-6fff13b09177",
+    "bank_75": "3443c344-27c6-49dc-9fbe-9a56cb44b1cc",
+    "bank_76": "3164d1ca-1cf4-4011-adf7-f037545b37d8",
+    "bank_77": "58b0d502-e313-49b7-aa22-aea298f0de42",
+    "bank_78": "39ab644b-39a2-4124-855d-592661571d32",
+    "bank_79": "4b2d925c-501f-4766-8389-ca79c8287abb",
+    "bank_80": "bec5ad90-f227-4371-85dc-e0a530926039",
+    "bank_81": "855d9e73-fc71-4552-a23b-f2580bd94faf",
+    "bank_82": "f9475773-0085-4254-936a-16d94e928296",
+    "bank_83": "367aa9e3-87b3-445a-b9c7-01c61b8b1ef9",
+    "bank_84": "08c4dd24-b8c3-42c6-8ecd-0467ad260bf7",
+    "bank_85": "b1860414-d0c7-4aa8-a9ec-84769ce65f5c",
+    "bank_86": "75792745-3ff6-4bd2-8ca1-b04faa4450a6",
+    "bank_87": "d7c2dbb2-66f1-4c6f-b6df-424546bbc9d7",
+    "bank_88": "217666ee-02db-44d1-b99e-37ac11a7966d",
+    "bank_89": "4b171e6f-21d3-413d-a36f-3630e08c71cc",
+    "bank_90": "3b510b0a-f928-4c51-98f9-d1fa36d600f0",
+    "bank_91": "88d81aca-7dd7-464b-8b5b-36bd35275b43",
+    "bank_92": "a5ffa0d9-be90-47ae-947f-577bc6592f63",
+    "bank_93": "5ae4f3c9-7cd8-4a49-b8f0-186d9b95e395",
+    "bank_94": "82922270-9ed2-4acb-a0db-d0d5de9b612e",
+    "bank_95": "67919afd-5eff-4cba-91b1-d799c5766a28",
+    "bank_96": "16718025-fa3a-4ded-9d10-ba9f486c11d7",
+    "bank_97": "83c5648b-9d06-4a48-8e6a-aa3fc4fe210c",
+    "bank_98": "e441663b-077d-4a83-90bb-4a7d14ed4d7c",
+    "bank_99": "e84b7b42-f8db-41ae-956e-d476276a7641",
+    "bank_100": "3784d8a5-7414-48d6-8074-e32fb8beb6a2",
+    "bank_101": "fb8e3051-d9e8-41b3-8fa1-524d320afb84",
+    "bank_102": "86866245-8538-4fb6-9d17-e56109e4ae3d",
+    "bank_103": "69ece542-183c-40bd-97fc-d2d8e6addd01",
+    "bank_104": "3019b816-75c6-4c94-9cd0-609098963846",
+    "bank_105": "76c20e6a-12e1-4486-b841-bcfcd2d00126",
+    "bank_106": "1e72c7b3-037a-4049-9afd-dfb85b5c2898",
+    "bank_107": "b08d314d-cb51-4096-be6a-65517f773c51",
+    "bank_108": "14d5016d-4cd8-42b4-b93f-0b9f19275807",
+    "bank_109": "4f94b8ed-137b-4eb5-a7f8-71bf89a8f54b",
+    "bank_110": "139f2f0c-74f9-40cd-9f38-1507c3ff42b9",
+    "bank_111": "fb10f400-69b5-4df8-9e90-d64b35851488",
+    "bank_112": "af184407-dd69-46ab-b951-abc0a3b71ffe",
+    "bank_113": "97a5f07a-f737-4bbe-9ed6-bd87c594af9f",
+    "bank_114": "7a9e250b-0c44-43f6-b3ee-42fb32ecc27c",
+    "bank_115": "749ba553-eb36-4245-9e6b-e0505e85ce2c",
+    "bank_116": "a3a24cd8-984f-480b-b8f7-1e9027773412",
+    "bank_117": "cfe65086-508e-4da7-b8b3-011edbf1ad82",
+    "bank_118": "db85c1f6-afdf-44d9-8b36-71112d09ea82",
+    "bank_119": "5122e82c-37c8-40c6-a5e0-6fdd47393fcc",
+    "bank_120": "14d8056c-403f-4695-866f-46747776ba00",
+    "bank_121": "e6180cbf-ff05-4847-898d-a3403e1314da",
+    "bank_122": "09008881-a216-4970-abfb-acfaf00f6bbf",
+    "bank_123": "c78ccd20-886c-46f0-9ee6-0f1c6c44599f",
+    "bank_124": "1aeede4c-9b50-4acc-933d-a1be54dc6d51",
+    "bank_125": "dd7b8d61-7f5f-4cfc-bc2b-bbc8a39ad704",
+    "bank_126": "09b2ed1d-fbb9-4ffe-aae3-48e5d6c9346f",
+    "bank_127": "8f7aa009-72f0-45dd-a52e-280740906bde",
+    "bank_128": "7038a121-459b-4361-a491-bf98fa619366",
+    "bank_129": "de511d10-0ea5-4e1e-9b7d-19a64e4d4c99",
+    "bank_130": "e20c21f4-4820-4ef4-b32a-4bef895dae26",
+    "bank_131": "8c77ef60-7a47-4049-8ddd-d7d47723bf8e",
+    "bank_132": "4cbd455b-a20d-4163-a6a2-b3948a3af64d",
+    "bank_133": "ed6f3eef-4cbd-4f21-9e92-8536eeecf14d",
+    "bank_134": "f1a00eb0-6e18-42a3-829d-266b30a1025e",
+    "bank_135": "663efe8e-fbf4-4e72-8763-638a266d15cf",
+    "bank_136": "e86917a2-896b-4f11-bd29-371d083ee5ef",
+    "bank_137": "5bd5bfcd-edd8-43a7-835d-58bbad2c1cee",
+    "bank_138": "bb36876b-362b-49d0-aaa7-b9519308de90",
+    "bank_139": "8b717cf5-91f9-4f98-a7de-f0fd9bddffa7",
+    "bank_140": "ec4c4de0-19d2-45fa-bf2c-e8fa1b537895",
+    "bank_141": "f9c36cb5-868c-4774-b5f9-d2dda2b99edb",
+    "bank_142": "1c08fb50-6abd-494e-a1d1-7be3ea31dc24",
+    "bank_143": "728c2455-3dcc-418b-8aad-05fbf7e7b281",
+    "bank_144": "c6f817cf-a9fc-41d4-a18b-76407c9ece33",
+    "bank_145": "972986c5-ac8e-41b0-a4e3-25d28d3191da",
+    "bank_146": "b98608e8-33f7-4c56-b3c2-46d07af41786",
+    "bank_147": "be75b882-b2fd-4590-aff9-d8199a5f39c9",
+    "bank_148": "eec33bea-1b71-4118-b858-85e148e2c89e",
+    "bank_149": "af566b14-6aa8-4ea2-9ff3-d31bdc58bf61",
+    "bank_150": "e7d8b159-c069-43f1-b007-25ad3d9b889e",
+    "bank_151": "8fe54294-b21e-4fe4-9a16-8f1f611d5715",
+    "bank_152": "d16e6ef5-5124-43e4-939e-9ba736dbdaa3",
+    "bank_153": "15bcc48c-9e6b-4e1b-8351-6f0ab14a6ca0",
+    "bank_154": "750e289a-ab69-40db-ba5e-f029ac95d410",
+    "bank_155": "8eba50e6-72f3-49d7-ac9b-6aa39336f175",
+    "bank_156": "d9d2291d-d995-4291-9107-93f9cf696347",
+    "bank_157": "d120592e-f7c3-4d77-87e4-3b78a0340039",
+    "bank_158": "4f1e4827-5559-4c32-8ffe-97616b4bccc3",
+    "bank_159": "cec31b9c-3280-4bfc-bcca-77a38ce84a5e",
+    "bank_160": "c8faa724-195f-4fe3-b182-fffaff988142",
+    "bank_161": "34d7686d-7bd6-4b3f-b4d7-d8b52d2e5b89",
+    "bank_162": "269b30da-9880-429b-9bfc-c658cbc60291",
+    "bank_163": "8ede2fee-fe84-4c37-a976-cfeb0bf35433",
+    "bank_164": "c7e9c4cf-4cb9-4a6f-aaf5-84d432a425de",
+    "bank_165": "034d4607-c8c9-42a1-95c5-c46e09efe8a5",
+    "bank_166": "3d3529c5-0e2f-47bb-a9bf-022fcdcd263c",
+    "bank_167": "cf82dba5-6822-4d14-a26e-f96da55eca51",
+    "bank_168": "a2ed341e-a045-47b4-bfff-7cbca59a486e",
+    "bank_169": "903c8fcc-601d-4692-8812-2fadc81a2c77",
+    "bank_170": "48bd6eda-2944-4b5b-8e82-4cc7942d4e94",
+    "bank_171": "506d3f3f-f60b-42c6-8dcf-c6bcbf6d696f",
+    "bank_172": "02153a82-f241-4888-8918-354b26bf6303",
+    "bank_173": "a2426baf-16d3-4f08-84fb-417015fa4992",
+    "bank_174": "7af5b60e-0978-417e-b547-d844e14cecea",
+    "bank_175": "35f9347a-6bd6-4c0a-8572-ee332637ddce",
+    "bank_176": "8c5219e0-6228-42c7-a838-c29bafca082a",
+    "bank_177": "f84abee6-14bb-44f6-a30d-f2b434ae76eb",
+    "bank_178": "2b5fbb13-a6a3-4cf2-a217-1ee79daaab09",
+    "bank_179": "5ae10d77-ce76-4338-85a3-bfa3392b3e62",
+    "bank_180": null,
+    "bank_181": null,
+    "bank_182": null,
+    "bank_183": null,
+    "bank_184": null,
+    "bank_185": null,
+    "bank_186": null,
+    "bank_187": null,
+    "bank_188": null,
+    "bank_189": null,
+    "bank_190": null,
+    "bank_191": null,
+    "bank_192": null,
+    "bank_193": null,
+    "bank_194": null,
+    "bank_195": null,
+    "bank_196": null,
+    "bank_197": null,
+    "bank_198": null,
+    "bank_199": null
+  },
+  "result": {
+    "matches": [
+      {
+        "bank": "bank_1",
+        "ledger": "36d92647-9109-4fe1-978f-b3f340014440",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_10",
+        "ledger": "59b45065-b7a9-40b8-9ca1-cabaac0b476c",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_100",
+        "ledger": "3784d8a5-7414-48d6-8074-e32fb8beb6a2",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_101",
+        "ledger": "fb8e3051-d9e8-41b3-8fa1-524d320afb84",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_103",
+        "ledger": "69ece542-183c-40bd-97fc-d2d8e6addd01",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_104",
+        "ledger": "3019b816-75c6-4c94-9cd0-609098963846",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_105",
+        "ledger": "76c20e6a-12e1-4486-b841-bcfcd2d00126",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_106",
+        "ledger": "1e72c7b3-037a-4049-9afd-dfb85b5c2898",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_107",
+        "ledger": "b08d314d-cb51-4096-be6a-65517f773c51",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_108",
+        "ledger": "14d5016d-4cd8-42b4-b93f-0b9f19275807",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_109",
+        "ledger": "4f94b8ed-137b-4eb5-a7f8-71bf89a8f54b",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_11",
+        "ledger": "5e547f70-13fe-447a-8229-b99448c95dec",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_110",
+        "ledger": "139f2f0c-74f9-40cd-9f38-1507c3ff42b9",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_111",
+        "ledger": "fb10f400-69b5-4df8-9e90-d64b35851488",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_112",
+        "ledger": "af184407-dd69-46ab-b951-abc0a3b71ffe",
+        "score": 0.9375,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_113",
+        "ledger": "97a5f07a-f737-4bbe-9ed6-bd87c594af9f",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_116",
+        "ledger": "a3a24cd8-984f-480b-b8f7-1e9027773412",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_117",
+        "ledger": "cfe65086-508e-4da7-b8b3-011edbf1ad82",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_118",
+        "ledger": "db85c1f6-afdf-44d9-8b36-71112d09ea82",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_12",
+        "ledger": "40d48a68-7697-495c-b251-1e102e514c45",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_120",
+        "ledger": "14d8056c-403f-4695-866f-46747776ba00",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_121",
+        "ledger": "e6180cbf-ff05-4847-898d-a3403e1314da",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_122",
+        "ledger": "09008881-a216-4970-abfb-acfaf00f6bbf",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_123",
+        "ledger": "c78ccd20-886c-46f0-9ee6-0f1c6c44599f",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_124",
+        "ledger": "1aeede4c-9b50-4acc-933d-a1be54dc6d51",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_125",
+        "ledger": "dd7b8d61-7f5f-4cfc-bc2b-bbc8a39ad704",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_126",
+        "ledger": "09b2ed1d-fbb9-4ffe-aae3-48e5d6c9346f",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_127",
+        "ledger": "8f7aa009-72f0-45dd-a52e-280740906bde",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_128",
+        "ledger": "7038a121-459b-4361-a491-bf98fa619366",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_129",
+        "ledger": "de511d10-0ea5-4e1e-9b7d-19a64e4d4c99",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_13",
+        "ledger": "79b05e2a-7e4b-461a-9b93-f190165f89a0",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_130",
+        "ledger": "e20c21f4-4820-4ef4-b32a-4bef895dae26",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_131",
+        "ledger": "8c77ef60-7a47-4049-8ddd-d7d47723bf8e",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_132",
+        "ledger": "4cbd455b-a20d-4163-a6a2-b3948a3af64d",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_134",
+        "ledger": "f1a00eb0-6e18-42a3-829d-266b30a1025e",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_135",
+        "ledger": "663efe8e-fbf4-4e72-8763-638a266d15cf",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_137",
+        "ledger": "5bd5bfcd-edd8-43a7-835d-58bbad2c1cee",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_139",
+        "ledger": "8b717cf5-91f9-4f98-a7de-f0fd9bddffa7",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_14",
+        "ledger": "9ed16bea-777e-4028-9350-8ad1c26bb95b",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_140",
+        "ledger": "ec4c4de0-19d2-45fa-bf2c-e8fa1b537895",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_141",
+        "ledger": "f9c36cb5-868c-4774-b5f9-d2dda2b99edb",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_142",
+        "ledger": "1c08fb50-6abd-494e-a1d1-7be3ea31dc24",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_143",
+        "ledger": "728c2455-3dcc-418b-8aad-05fbf7e7b281",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_144",
+        "ledger": "c6f817cf-a9fc-41d4-a18b-76407c9ece33",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_145",
+        "ledger": "972986c5-ac8e-41b0-a4e3-25d28d3191da",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_146",
+        "ledger": "b98608e8-33f7-4c56-b3c2-46d07af41786",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_147",
+        "ledger": "be75b882-b2fd-4590-aff9-d8199a5f39c9",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_148",
+        "ledger": "eec33bea-1b71-4118-b858-85e148e2c89e",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_149",
+        "ledger": "af566b14-6aa8-4ea2-9ff3-d31bdc58bf61",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_15",
+        "ledger": "b88a4e8a-3b65-4a72-bef0-f81539a26844",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_150",
+        "ledger": "e7d8b159-c069-43f1-b007-25ad3d9b889e",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_151",
+        "ledger": "8fe54294-b21e-4fe4-9a16-8f1f611d5715",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_154",
+        "ledger": "750e289a-ab69-40db-ba5e-f029ac95d410",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_155",
+        "ledger": "8eba50e6-72f3-49d7-ac9b-6aa39336f175",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_156",
+        "ledger": "d9d2291d-d995-4291-9107-93f9cf696347",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_157",
+        "ledger": "d120592e-f7c3-4d77-87e4-3b78a0340039",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_158",
+        "ledger": "4f1e4827-5559-4c32-8ffe-97616b4bccc3",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_159",
+        "ledger": "cec31b9c-3280-4bfc-bcca-77a38ce84a5e",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_16",
+        "ledger": "7a13a87c-bcff-4b73-8417-b85df5928873",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_160",
+        "ledger": "c8faa724-195f-4fe3-b182-fffaff988142",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_162",
+        "ledger": "269b30da-9880-429b-9bfc-c658cbc60291",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_163",
+        "ledger": "8ede2fee-fe84-4c37-a976-cfeb0bf35433",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_164",
+        "ledger": "c7e9c4cf-4cb9-4a6f-aaf5-84d432a425de",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_165",
+        "ledger": "034d4607-c8c9-42a1-95c5-c46e09efe8a5",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_166",
+        "ledger": "3d3529c5-0e2f-47bb-a9bf-022fcdcd263c",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_167",
+        "ledger": "cf82dba5-6822-4d14-a26e-f96da55eca51",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_168",
+        "ledger": "a2ed341e-a045-47b4-bfff-7cbca59a486e",
+        "score": 0.9375,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_169",
+        "ledger": "903c8fcc-601d-4692-8812-2fadc81a2c77",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_172",
+        "ledger": "02153a82-f241-4888-8918-354b26bf6303",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_173",
+        "ledger": "a2426baf-16d3-4f08-84fb-417015fa4992",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_174",
+        "ledger": "7af5b60e-0978-417e-b547-d844e14cecea",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_175",
+        "ledger": "35f9347a-6bd6-4c0a-8572-ee332637ddce",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_176",
+        "ledger": "8c5219e0-6228-42c7-a838-c29bafca082a",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_177",
+        "ledger": "f84abee6-14bb-44f6-a30d-f2b434ae76eb",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_178",
+        "ledger": "2b5fbb13-a6a3-4cf2-a217-1ee79daaab09",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_179",
+        "ledger": "5ae10d77-ce76-4338-85a3-bfa3392b3e62",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_18",
+        "ledger": "215ccdca-d4ce-4e71-810b-eb99af7a77cd",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_2",
+        "ledger": "a7e3e4d2-7aff-439c-b4d3-50acf793a1ed",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_20",
+        "ledger": "f5d64fd2-64bf-48f4-9e18-0b16d356c52c",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_21",
+        "ledger": "adc5d07e-617b-42ad-a82e-7a634a37033b",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_22",
+        "ledger": "41075f6e-3363-4924-93f7-48fc43c6fcde",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_24",
+        "ledger": "b7ce4624-d1c0-47dd-9567-375c75b03ca6",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_25",
+        "ledger": "c5b74b5b-685b-4417-b742-704f0819cd4b",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_26",
+        "ledger": "26a601f7-15ad-4666-b57a-fda052231a02",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_27",
+        "ledger": "350a428f-50a6-4f71-91f2-4457206b82e5",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_28",
+        "ledger": "e2885689-87ec-4386-b060-72cf231ba24a",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_29",
+        "ledger": "86db163f-5f01-47ec-9a78-21496fa26eae",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_3",
+        "ledger": "3e5e3448-7d4a-4b21-9cdd-fda5ca587c2f",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_30",
+        "ledger": "20ef092b-445f-4601-9b68-980a7975a7ce",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_31",
+        "ledger": "97866e21-d81a-44bc-a294-33182a0aa26b",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_32",
+        "ledger": "2f788481-4727-4faf-97c2-5c884b816ff9",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_33",
+        "ledger": "44b5d994-3428-4576-a977-bb81a5a0e8e9",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_35",
+        "ledger": "d2d01746-5a60-4de5-b591-67d25844e6f4",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_36",
+        "ledger": "e591d8aa-b106-4944-8afa-b75be442182f",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_37",
+        "ledger": "a4d71fb9-c76e-44f3-a55b-dcd8300746b2",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_39",
+        "ledger": "ad2fb4ca-3f27-42f6-b87e-baedfe556d02",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_4",
+        "ledger": "bc997ee4-e115-4799-88b3-17776c69cf6c",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_40",
+        "ledger": "f18c0e55-5a70-4bb4-b47c-cfbc1e246400",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_41",
+        "ledger": "342ac80d-515b-4667-a5c2-efe8c3d54f97",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_42",
+        "ledger": "dc16e918-decf-4169-8baa-f6d3a1112f88",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_43",
+        "ledger": "d20e3c93-5886-469a-b7c1-3bb81df9820e",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_44",
+        "ledger": "12daf260-58bd-4af4-8f99-34ef364157a1",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_45",
+        "ledger": "12f53885-8ef7-4276-a62d-69fdd0c59354",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_47",
+        "ledger": "b4de9fee-21dd-4d4c-b9bd-9b75a0508529",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_48",
+        "ledger": "86f5cede-3dbb-419e-836e-f81f17ecd6e8",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_49",
+        "ledger": "485c5b60-536a-498d-b7c2-aed5bebde42a",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_5",
+        "ledger": "61465441-87bf-419f-9e53-6efb6905dbdb",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_50",
+        "ledger": "5cac1c5b-1ede-439b-a7fa-97e749af398e",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_52",
+        "ledger": "8f4b1eec-141e-492c-ab1c-d0f4079f4e46",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_53",
+        "ledger": "677e5c97-1ef2-4d75-89eb-0f0f515b2489",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_56",
+        "ledger": "0badee5c-5cae-4b38-98a6-42421d01f8a4",
+        "score": 0.935483870967742,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_58",
+        "ledger": "7da9d4d4-c018-45ef-8706-9282a8cd93d7",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_59",
+        "ledger": "2a1d773e-549e-4564-9ced-872d84e0ffaf",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_6",
+        "ledger": "df93ff3b-0337-480d-aa78-2e11982e42fe",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_60",
+        "ledger": "246e4b48-6f6d-4fbf-bc04-082f6335fb3e",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_61",
+        "ledger": "9c9c7582-497d-46ba-b89b-0b31b867581c",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_62",
+        "ledger": "861056e1-4308-419d-9fe2-3d14beed1eac",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_63",
+        "ledger": "315eb798-bd64-42f2-895f-3e7319012635",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_64",
+        "ledger": "dd858efb-e328-4814-b41f-b75f224e9ed6",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_65",
+        "ledger": "fa4fb4dc-cefb-43e1-babb-ef3e1e35a73e",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_66",
+        "ledger": "ad03ed19-2ace-4954-87ee-fe4574d7dffe",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_67",
+        "ledger": "9544c6d2-f70b-4473-9621-754650c82f03",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_7",
+        "ledger": "2c082ca0-c0c1-4d95-8ebe-cb87e359df28",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_70",
+        "ledger": "e1e20b21-8f42-4e5d-81f4-63d47bec6a95",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_71",
+        "ledger": "46fe0b8f-eb2e-48d2-b719-0af89bed1099",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_72",
+        "ledger": "49d864e0-e65e-407b-b841-3300987396bd",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_73",
+        "ledger": "00ed9218-edbf-4ba8-abee-9ea3a59f0274",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_74",
+        "ledger": "18da7b2c-095f-4e39-be01-6fff13b09177",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_75",
+        "ledger": "3443c344-27c6-49dc-9fbe-9a56cb44b1cc",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_77",
+        "ledger": "58b0d502-e313-49b7-aa22-aea298f0de42",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_78",
+        "ledger": "39ab644b-39a2-4124-855d-592661571d32",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_79",
+        "ledger": "4b2d925c-501f-4766-8389-ca79c8287abb",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_8",
+        "ledger": "4af4fd7c-c47b-4302-9b06-757c78cef93a",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_80",
+        "ledger": "bec5ad90-f227-4371-85dc-e0a530926039",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_81",
+        "ledger": "855d9e73-fc71-4552-a23b-f2580bd94faf",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_82",
+        "ledger": "f9475773-0085-4254-936a-16d94e928296",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_83",
+        "ledger": "367aa9e3-87b3-445a-b9c7-01c61b8b1ef9",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_84",
+        "ledger": "08c4dd24-b8c3-42c6-8ecd-0467ad260bf7",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_86",
+        "ledger": "75792745-3ff6-4bd2-8ca1-b04faa4450a6",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_87",
+        "ledger": "d7c2dbb2-66f1-4c6f-b6df-424546bbc9d7",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_88",
+        "ledger": "217666ee-02db-44d1-b99e-37ac11a7966d",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_89",
+        "ledger": "4b171e6f-21d3-413d-a36f-3630e08c71cc",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_9",
+        "ledger": "eb5fcdb1-65a8-49e2-8ab5-cbf3843d794a",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_90",
+        "ledger": "3b510b0a-f928-4c51-98f9-d1fa36d600f0",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_91",
+        "ledger": "88d81aca-7dd7-464b-8b5b-36bd35275b43",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_93",
+        "ledger": "5ae4f3c9-7cd8-4a49-b8f0-186d9b95e395",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_94",
+        "ledger": "82922270-9ed2-4acb-a0db-d0d5de9b612e",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_96",
+        "ledger": "16718025-fa3a-4ded-9d10-ba9f486c11d7",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_97",
+        "ledger": "83c5648b-9d06-4a48-8e6a-aa3fc4fe210c",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_98",
+        "ledger": "e441663b-077d-4a83-90bb-4a7d14ed4d7c",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      },
+      {
+        "bank": "bank_99",
+        "ledger": "e84b7b42-f8db-41ae-956e-d476276a7641",
+        "score": 1,
+        "reason": "exact amount/currency; date window; mutual unambiguous descriptor similarity"
+      }
+    ],
+    "exceptions": [
+      {
+        "bank": "bank_0",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_102",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_114",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_115",
+        "reason": "ambiguous_candidates",
+        "candidates": [
+          {
+            "ledger": "749ba553-eb36-4245-9e6b-e0505e85ce2c",
+            "score": 1
+          },
+          {
+            "ledger": "98d93b22-b996-48e9-b7a2-7ba7719e51a7",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "bank": "bank_119",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_133",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_136",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_138",
+        "reason": "ambiguous_candidates",
+        "candidates": [
+          {
+            "ledger": "214c0259-cf06-4645-a57d-60c04a45d0e5",
+            "score": 1
+          },
+          {
+            "ledger": "bb36876b-362b-49d0-aaa7-b9519308de90",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "bank": "bank_152",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_153",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_161",
+        "reason": "ambiguous_candidates",
+        "candidates": [
+          {
+            "ledger": "34d7686d-7bd6-4b3f-b4d7-d8b52d2e5b89",
+            "score": 1
+          },
+          {
+            "ledger": "cca4df5e-79a2-4273-b90e-99e9e20dcb17",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "bank": "bank_17",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_170",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_171",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_180",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_181",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_182",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_183",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_184",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_185",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_186",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_187",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_188",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_189",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_19",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_190",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_191",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_192",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_193",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_194",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_195",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_196",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_197",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_198",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_199",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_23",
+        "reason": "ambiguous_candidates",
+        "candidates": [
+          {
+            "ledger": "82b128df-744b-405c-a713-a8749b16e86a",
+            "score": 1
+          },
+          {
+            "ledger": "84e0b8f5-d6a6-40c9-85ce-21a4d4f65cc4",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "bank": "bank_34",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_38",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_46",
+        "reason": "ambiguous_candidates",
+        "candidates": [
+          {
+            "ledger": "89516519-e2fd-423d-a4fe-20213602c412",
+            "score": 1
+          },
+          {
+            "ledger": "e73057b5-afec-4a10-b6f4-d67fb424ff2a",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "bank": "bank_51",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_54",
+        "reason": "competing_bank_records",
+        "candidates": [
+          {
+            "ledger": "36c1854e-6146-41c3-8549-7edec9c5a4de",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "bank": "bank_55",
+        "reason": "competing_bank_records",
+        "candidates": [
+          {
+            "ledger": "36c1854e-6146-41c3-8549-7edec9c5a4de",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "bank": "bank_57",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_68",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_69",
+        "reason": "ambiguous_candidates",
+        "candidates": [
+          {
+            "ledger": "0cb90345-116f-4d2e-af66-7d41362c9e29",
+            "score": 1
+          },
+          {
+            "ledger": "fd18924a-d762-4dd6-ad28-70b6e55e838c",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "bank": "bank_76",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_85",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      },
+      {
+        "bank": "bank_92",
+        "reason": "ambiguous_candidates",
+        "candidates": [
+          {
+            "ledger": "a5ffa0d9-be90-47ae-947f-577bc6592f63",
+            "score": 1
+          },
+          {
+            "ledger": "cd838e5c-bf04-41ed-bb63-65d35819c069",
+            "score": 1
+          }
+        ]
+      },
+      {
+        "bank": "bank_95",
+        "reason": "no_compatible_candidate",
+        "candidates": []
+      }
+    ]
+  }
+}

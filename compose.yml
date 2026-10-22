@@ -1,0 +1,57 @@
+x-application: &application
+  image: tally-local
+  build: .
+  read_only: true
+  tmpfs: [/tmp]
+  cap_drop: [ALL]
+  security_opt: [no-new-privileges:true]
+  environment: &database
+    PGHOST: db
+    PGPORT: 5432
+    PGDATABASE: tally
+    TALLY_SCHEMA: tally_v1
+    TALLY_DB_PASSWORD: ${TALLY_DB_PASSWORD:?Run python3 scripts/configure.py}
+services:
+  db:
+    image: postgres:18
+    environment:
+      POSTGRES_USER: tally_admin
+      POSTGRES_PASSWORD: ${TALLY_DB_ADMIN_PASSWORD:?Run python3 scripts/configure.py}
+      POSTGRES_DB: tally
+      POSTGRES_INITDB_ARGS: --auth=scram-sha-256
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes: ["database:/var/lib/postgresql/data"]
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U tally_admin -d tally"]
+      interval: 2s
+      timeout: 3s
+      retries: 30
+  migrate:
+    <<: *application
+    command: [node, dist/scripts/migrate.js]
+    environment:
+      <<: *database
+      TALLY_DB_ADMIN_PASSWORD: ${TALLY_DB_ADMIN_PASSWORD}
+    depends_on:
+      db: {condition: service_healthy}
+  seed:
+    <<: *application
+    command: [node, dist/scripts/seed.js]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+  api:
+    <<: *application
+    environment:
+      <<: *database
+      TALLY_PASSWORD: ${TALLY_PASSWORD}
+      TALLY_TOKEN: ${TALLY_TOKEN}
+    ports: ["127.0.0.1:8084:8084"]
+    depends_on:
+      seed: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, node, -e, "fetch('http://127.0.0.1:8084/health').then(r=>{if(!r.ok)process.exit(1)}).catch(()=>process.exit(1))"]
+      interval: 2s
+      timeout: 4s
+      retries: 30
+volumes:
+  database:

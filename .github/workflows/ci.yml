@@ -1,0 +1,46 @@
+name: CI
+on: [push, pull_request]
+permissions: {contents: read}
+jobs:
+  gates:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:18
+        env: {POSTGRES_USER: tally_admin, POSTGRES_PASSWORD: synthetic-ci-admin-only-password, POSTGRES_DB: tally}
+        ports: ["55440:5432"]
+        options: --health-cmd "pg_isready -U tally_admin -d tally" --health-interval 2s --health-timeout 3s --health-retries 30
+    env:
+      TALLY_DB_ADMIN_PASSWORD: synthetic-ci-admin-only-password
+      TALLY_DB_PASSWORD: synthetic-ci-app-only-password
+      TALLY_PASSWORD: synthetic-ci-operator-only-password
+      TALLY_TOKEN: synthetic-ci-machine-only-token
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.13'}
+      - run: make setup build lint test bench scan
+      - name: Fresh clone Compose and durable database restart
+        run: |
+          git clone --no-local . /tmp/tally-clean
+          cd /tmp/tally-clean
+          python3 scripts/configure.py
+          mkdir -p docs/results
+          trap 'docker compose logs --no-color > docs/results/compose.log; cp -r docs/results "$GITHUB_WORKSPACE/docs/results/container-ci"; docker compose down' EXIT
+          set -a
+          . ./.env
+          set +a
+          docker compose up --build --wait --wait-timeout 180
+          node scripts/compose_smoke.mjs
+          docker compose restart db
+          for i in $(seq 1 90); do curl -fsS http://localhost:8084/health && break; sleep 2; done
+          curl --fail http://localhost:8084/health
+          TALLY_SMOKE_AFTER_RESTART=1 node scripts/compose_smoke.mjs
+          docker compose exec -T api npm ls --omit=dev --json > docs/results/runtime-dependencies.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: tally-ci-evidence
+          path: docs/results/
