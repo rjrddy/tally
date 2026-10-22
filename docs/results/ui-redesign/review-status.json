@@ -5,5 +5,13 @@
   "recording_seconds": 98.04,
   "recording_gate_passed": true,
   "historical_benchmarks_rerun": false,
-  "publication": "pending explicit approval"
+  "publication": "pending explicit approval",
+  "fresh_clone_frontend_check": {
+    "name": "Tally",
+    "pass": true,
+    "source_commit": "a6cd59fd85f01a8456c7f18e49c8a3cac85262a2",
+    "clone": "/tmp/flagship-ui-clones-q6zy8d1a/tally",
+    "scope": "Independent frontend dependency install, lint, build; public evidence package where present. No new full backend container claim."
+  },
+  "full_backend_fresh_clone_rerun": false
 }
