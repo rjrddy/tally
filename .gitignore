@@ -10,3 +10,5 @@ dist/
 data/
 docs/results/recordings/
 deploy/site/dist/
+.vercel
+.env*

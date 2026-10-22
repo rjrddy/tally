@@ -1,0 +1,13 @@
+{
+  "url": "https://tally-gamma-lac.vercel.app",
+  "anonymous_http_status": 200,
+  "page_errors": [],
+  "measurement_cards": 3,
+  "latency_rows": 3,
+  "recorded_fault_tabs_work": true,
+  "video_played": true,
+  "video_duration_seconds": 93.08,
+  "mobile_no_overflow": true,
+  "proof_http_status": 200,
+  "scope": "Static measured evidence and actual recording; persistent API not hosted"
+}

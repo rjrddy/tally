@@ -36,7 +36,7 @@ Use the generated operator password from ignored `.env`. Node and Postgres run i
 
 5. **Decisions and limits:**
 
-**Partial for persistent interactive hosting.** Public evidence hosting: not deployed. The site presents the real console recording and measured runs; it does not run a durable ledger. Every financial record, merchant and feed value is synthetic. No financial network, bank, employer code or real customer data is used.
+**Partial for persistent interactive hosting.** Public evidence hosting: https://tally-gamma-lac.vercel.app. The site presents the real console recording and measured runs; it does not run a durable ledger. Every financial record, merchant and feed value is synthetic. No financial network, bank, employer code or real customer data is used.
 
 Money is bounded integer strings over JSON, BigInt in TypeScript and exact Postgres NUMERIC. Each journal uses one currency; account currency, conservation, idempotency and optional no-overdraft guards are enforced transactionally. The runtime role cannot directly update journal facts or balances. A global ledger lock serializes the chain; high availability, sharding, live hosted latency, multi-tenant accounting, FX, tax and regulatory accounting policy are not measured or implemented. A database administrator able to rewrite the whole chain is outside the integrity boundary.
 

@@ -1,0 +1,285 @@
+Cloning into '/tmp/tally-native.vxIANo/repo'...
+npm ci
+
+added 221 packages, and audited 222 packages in 1s
+
+75 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+npm --prefix apps/web ci
+
+added 22 packages, and audited 23 packages in 639ms
+
+6 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+python3 -m venv .venv
+.venv/bin/pip install --upgrade pip==26.2.2 setuptools==84.0.0
+Collecting pip==26.2.2
+  Using cached pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting setuptools==84.0.0
+  Using cached setuptools-84.0.0-py3-none-any.whl.metadata (6.6 kB)
+Using cached pip-26.2.2-py3-none-any.whl (1.8 MB)
+Using cached setuptools-84.0.0-py3-none-any.whl (818 kB)
+Installing collected packages: setuptools, pip
+  Attempting uninstall: pip
+    Found existing installation: pip 25.0
+    Uninstalling pip-25.0:
+      Successfully uninstalled pip-25.0
+Successfully installed pip-26.2.2 setuptools-84.0.0
+.venv/bin/pip install -r requirements-dev.txt
+Collecting ruff==0.17.1 (from -r requirements-dev.txt (line 1))
+  Using cached ruff-0.17.1-py3-none-macosx_11_0_arm64.whl.metadata (20 kB)
+Collecting playwright==1.64.0 (from -r requirements-dev.txt (line 2))
+  Using cached playwright-1.64.0-py3-none-macosx_11_0_arm64.whl.metadata (3.3 kB)
+Collecting pyee<15,>=13 (from playwright==1.64.0->-r requirements-dev.txt (line 2))
+  Using cached pyee-14.0.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting greenlet<4.0.0,>=3.1.1 (from playwright==1.64.0->-r requirements-dev.txt (line 2))
+  Using cached greenlet-3.5.6-cp313-cp313-macosx_11_0_universal2.whl.metadata (3.8 kB)
+Collecting typing-extensions (from pyee<15,>=13->playwright==1.64.0->-r requirements-dev.txt (line 2))
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Using cached ruff-0.17.1-py3-none-macosx_11_0_arm64.whl (9.3 MB)
+Using cached playwright-1.64.0-py3-none-macosx_11_0_arm64.whl (43.0 MB)
+Using cached greenlet-3.5.6-cp313-cp313-macosx_11_0_universal2.whl (294 kB)
+Using cached pyee-14.0.0-py3-none-any.whl (15 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Installing collected packages: typing-extensions, ruff, greenlet, pyee, playwright
+
+Successfully installed greenlet-3.5.6 playwright-1.64.0 pyee-14.0.0 ruff-0.17.1 typing-extensions-4.16.0
+npm run build
+
+> tally-ledger@0.1.0 build
+> tsc
+
+npm --prefix apps/web run build
+
+> tally-console@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v6.4.4 building for production...
+transforming...
+✓ 28 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.47 kB │ gzip:  0.32 kB
+dist/assets/index-CqHe6F9G.css    8.70 kB │ gzip:  2.70 kB
+dist/assets/index-D9tv3hly.js   213.90 kB │ gzip: 66.38 kB
+✓ built in 421ms
+npm run lint
+
+> tally-ledger@0.1.0 lint
+> eslint src tests scripts && prettier --check src tests scripts
+
+Checking formatting...
+All matched files use Prettier code style!
+npm --prefix apps/web run lint
+
+> tally-console@0.1.0 lint
+> prettier --check src
+
+Checking formatting...
+All matched files use Prettier code style!
+.venv/bin/ruff check scripts
+All checks passed!
+.venv/bin/ruff format --check scripts
+4 files already formatted
+node  --test --test-concurrency=1 dist/tests/*.test.js
+TAP version 13
+# {"event":"request_rejected","trace_id":"9be04cbe-fbba-4a1d-a7f6-da5e2d76aaf0","status":401,"code":"sign_in_required"}
+# {"event":"http_completed","trace_id":"9be04cbe-fbba-4a1d-a7f6-da5e2d76aaf0","method":"GET","route":"/api/state","status":401,"elapsed_ms":2.1960409999999797}
+# {"event":"http_completed","trace_id":"1683444c-0b93-40d0-87c5-5a999a590cd4","method":"POST","route":"/api/login","status":201,"elapsed_ms":10.627999999999986}
+# {"event":"http_completed","trace_id":"ac665dba-762a-4a6d-916f-9deb4d40ac6e","method":"GET","route":"/api/state","status":200,"elapsed_ms":7.924374999999998}
+# {"event":"request_rejected","trace_id":"6e76a28b-006e-4fe6-95a2-c62cf441b5d8","status":403,"code":"csrf_required"}
+# {"event":"http_completed","trace_id":"6e76a28b-006e-4fe6-95a2-c62cf441b5d8","method":"POST","route":"/api/rules","status":403,"elapsed_ms":0.8376670000000104}
+# {"event":"http_completed","trace_id":"f4b7c6ee-7e84-4fcf-a109-9f3e7f3ad0a6","method":"POST","route":"/api/rules","status":201,"elapsed_ms":1.7305829999999673}
+# {"event":"http_completed","trace_id":"61b7af48-a3be-4ef7-b896-c91bf98a5abd","method":"POST","route":"/api/logout","status":201,"elapsed_ms":0.9509590000000117}
+# {"event":"request_rejected","trace_id":"fa846d32-0029-4d45-8b8e-73006c764c00","status":401,"code":"sign_in_required"}
+# {"event":"http_completed","trace_id":"fa846d32-0029-4d45-8b8e-73006c764c00","method":"GET","route":"/api/state","status":401,"elapsed_ms":0.7835420000000113}
+# Subtest: real HTTP cookie login, CSRF, logout and revocation
+ok 1 - real HTTP cookie login, CSRF, logout and revocation
+  ---
+  duration_ms: 119.9135
+  type: 'test'
+  ...
+# {"event":"http_completed","trace_id":"85c5876b-2c71-4315-8020-90253109f909","method":"POST","route":"/api/accounts","status":201,"elapsed_ms":2.9704169999999976}
+# {"event":"http_completed","trace_id":"cca09712-1d29-4d65-b8ad-9d9843ccefa3","method":"POST","route":"/api/accounts","status":201,"elapsed_ms":1.5277079999999614}
+# {"event":"http_completed","trace_id":"2de0c959-2d00-4227-a8a2-dfaf0ab8eff3","method":"POST","route":"/api/ledger/post","status":201,"elapsed_ms":4.917041999999981}
+# {"event":"http_completed","trace_id":"a0cbc89a-a677-42fb-8e83-e750768fea0e","method":"GET","route":"/api/state","status":200,"elapsed_ms":1.3080420000000004}
+# {"event":"http_completed","trace_id":"224ed08f-5787-48b2-a5a9-fda0f4e4a554","method":"POST","route":"/api/ledger/replay","status":201,"elapsed_ms":1.6203330000000165}
+# Subtest: real HTTP retains money strings above Number safe integer bounds
+ok 2 - real HTTP retains money strings above Number safe integer bounds
+  ---
+  duration_ms: 17.080583
+  type: 'test'
+  ...
+# {"event":"request_rejected","trace_id":"de915ef5-dffa-46db-af4b-6d03273a06f2","status":409,"code":"idempotency_conflict"}
+# {"event":"http_completed","trace_id":"de915ef5-dffa-46db-af4b-6d03273a06f2","method":"POST","route":"/api/ledger/post","status":409,"elapsed_ms":2.6668750000000045}
+# {"event":"request_rejected","trace_id":"f8905d0f-5e35-442e-bbfe-f4d39a57b8b2","status":422,"code":"invalid_input"}
+# {"event":"http_completed","trace_id":"f8905d0f-5e35-442e-bbfe-f4d39a57b8b2","method":"POST","route":"/api/ledger/post","status":422,"elapsed_ms":0.7316670000000158}
+# Subtest: real HTTP rejects float money and conflicting idempotency
+ok 3 - real HTTP rejects float money and conflicting idempotency
+  ---
+  duration_ms: 6.434125
+  type: 'test'
+  ...
+# {"event":"http_completed","trace_id":"59db7d90-52ed-48d9-9a23-16373aba814a","method":"POST","route":"static","status":413,"elapsed_ms":0.7292080000000283}
+# {"event":"http_completed","trace_id":"a2d31e6f-ea36-4004-a1b2-52e65b2590ed","method":"GET","route":"static","status":401,"elapsed_ms":0.38741700000002766}
+# {"event":"http_completed","trace_id":"4bd16416-437b-4c6c-ae88-7f5a8a4db8ce","method":"GET","route":"static","status":200,"elapsed_ms":0.1968750000000341}
+# {"event":"request_rejected","trace_id":"d137611a-1c48-4653-bcdd-9815326ba8c2","status":404,"code":"not_found"}
+# {"event":"http_completed","trace_id":"d137611a-1c48-4653-bcdd-9815326ba8c2","method":"GET","route":"static","status":404,"elapsed_ms":0.5155839999999898}
+# Subtest: real HTTP input bounds and authenticated metrics
+ok 4 - real HTTP input bounds and authenticated metrics
+  ---
+  duration_ms: 5.077584
+  type: 'test'
+  ...
+# Subtest: database rejects runtime edits and unbalanced direct-function input atomically
+ok 5 - database rejects runtime edits and unbalanced direct-function input atomically
+  ---
+  duration_ms: 46.580041
+  type: 'test'
+  ...
+# Subtest: concurrent duplicated posting creates one event and one balance effect
+ok 6 - concurrent duplicated posting creates one event and one balance effect
+  ---
+  duration_ms: 18.617041
+  type: 'test'
+  ...
+# Subtest: database account lock prevents competing overdrafts
+ok 7 - database account lock prevents competing overdrafts
+  ---
+  duration_ms: 4.445291
+  type: 'test'
+  ...
+# Subtest: currency mismatch rolls back the entire journal
+ok 8 - currency mismatch rolls back the entire journal
+  ---
+  duration_ms: 2.551625
+  type: 'test'
+  ...
+# Subtest: property: actual Postgres postings conserve and replay exactly
+ok 9 - property: actual Postgres postings conserve and replay exactly
+  ---
+  duration_ms: 89.774209
+  type: 'test'
+  ...
+# Subtest: projection corruption is detected and rebuilds the same balance digest
+ok 10 - projection corruption is detected and rebuilds the same balance digest
+  ---
+  duration_ms: 11.417042
+  type: 'test'
+  ...
+# Subtest: rules and decisions remain immutable and exact after new publication
+ok 11 - rules and decisions remain immutable and exact after new publication
+  ---
+  duration_ms: 6.414292
+  type: 'test'
+  ...
+# Subtest: a blocked decision query fails its budget instead of returning approval
+ok 12 - a blocked decision query fails its budget instead of returning approval
+  ---
+  duration_ms: 84.39
+  type: 'test'
+  ...
+# Subtest: reconciliation review races cannot assign one ledger record twice
+ok 13 - reconciliation review races cannot assign one ledger record twice
+  ---
+  duration_ms: 12.759125
+  type: 'test'
+  ...
+# Subtest: source point identity cannot be silently rewritten
+ok 14 - source point identity cannot be silently rewritten
+  ---
+  duration_ms: 3.402625
+  type: 'test'
+  ...
+# Subtest: property: exact conservation beyond safe JavaScript integer range
+ok 15 - property: exact conservation beyond safe JavaScript integer range
+  ---
+  duration_ms: 10.892625
+  type: 'test'
+  ...
+# Subtest: property: posting line order is semantically idempotent
+ok 16 - property: posting line order is semantically idempotent
+  ---
+  duration_ms: 4.38125
+  type: 'test'
+  ...
+# Subtest: property: every nonzero imbalance is rejected
+ok 17 - property: every nonzero imbalance is rejected
+  ---
+  duration_ms: 4.307167
+  type: 'test'
+  ...
+# Subtest: property: floating point money is rejected
+ok 18 - property: floating point money is rejected
+  ---
+  duration_ms: 4.989917
+  type: 'test'
+  ...
+# Subtest: property: duplicate accounts cannot create a fake balanced journal
+ok 19 - property: duplicate accounts cannot create a fake balanced journal
+  ---
+  duration_ms: 3.524208
+  type: 'test'
+  ...
+# Subtest: property: a changed event body fails its original hash binding
+ok 20 - property: a changed event body fails its original hash binding
+  ---
+  duration_ms: 4.077917
+  type: 'test'
+  ...
+# Subtest: property: a replayed event identity is rejected
+ok 21 - property: a replayed event identity is rejected
+  ---
+  duration_ms: 5.342833
+  type: 'test'
+  ...
+# Subtest: property: request digest changes never pass replay
+ok 22 - property: request digest changes never pass replay
+  ---
+  duration_ms: 3.558291
+  type: 'test'
+  ...
+# Subtest: property: decision boundaries use exact integer comparison
+ok 23 - property: decision boundaries use exact integer comparison
+  ---
+  duration_ms: 0.992292
+  type: 'test'
+  ...
+# Subtest: property: reconciliation is input-order independent
+ok 24 - property: reconciliation is input-order independent
+  ---
+  duration_ms: 8.535834
+  type: 'test'
+  ...
+# Subtest: reconciliation abstains on duplicate bank competition
+ok 25 - reconciliation abstains on duplicate bank competition
+  ---
+  duration_ms: 0.161125
+  type: 'test'
+  ...
+# Subtest: merchant cache is keyed by catalog version and bounded
+ok 26 - merchant cache is keyed by catalog version and bounded
+  ---
+  duration_ms: 18.003666
+  type: 'test'
+  ...
+# Subtest: freshness does not mistake ingestion time or a future point for freshness
+ok 27 - freshness does not mistake ingestion time or a future point for freshness
+  ---
+  duration_ms: 0.214125
+  type: 'test'
+  ...
+1..27
+# tests 27
+# suites 0
+# pass 27
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 998.30625
+c0d0a71057655deae0dfdae8d9c5d5280bba0dcb
