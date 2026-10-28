@@ -14,5 +14,12 @@
   "compositor_properties_only": true,
   "live_reduced_motion_cancellation": true,
   "fps": "not measured",
-  "new_dependencies": 0
+  "new_dependencies": 0,
+  "separate_dependency_repair": {
+    "adapter": "@nestjs/platform-express@12.3.2",
+    "body_parser": "2.4.0",
+    "tests_passed": 27,
+    "audit_vulnerabilities": 0,
+    "application_logic_changed": false
+  }
 }

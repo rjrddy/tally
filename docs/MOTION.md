@@ -21,3 +21,9 @@ The authenticated backend was not restarted for this UI-only change. The console
 The existing public evidence page is covered by `showcase-contract.json`, `showcase-built-smoke.json`, and its screenshots. It continues to show saved measurements, not a simulated live backend.
 
 Button feedback begins when click targeting is committed, so the first press does not shrink a hitbox underneath the pointer. Editable/dragging surfaces are excluded. Backend APIs, ranking/math policies, measurements, and document source data were not changed.
+
+## Separate CI dependency repair
+
+The first motion commit passed application tests but CI found existing body-parser/multer security advisories. The affected Nest Express adapter was updated to 12.3.2 and body-parser's supported lockfile range was refreshed. No ledger policy or schema changed. A temporary isolated PostgreSQL run passed all 27 Node unit/integration/property tests, build/lint and npm audit with zero vulnerabilities. See `security-gates.log`, `security-fix.log`, and `caught-ci-security-failure.log`. This is a separate maintenance change, not a motion dependency.
+
+References: https://github.com/advisories/GHSA-27r3-jxmh-p828 and https://github.com/advisories/GHSA-q7qp-rjg7-q26m .

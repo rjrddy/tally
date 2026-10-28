@@ -1,0 +1,365 @@
+gates	Run make setup build lint test bench scan	﻿2026-10-28T02:00:36.3758566Z ##[group]Run make setup build lint test bench scan
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.3759087Z ^[[36;1mmake setup build lint test bench scan^[[0m
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4088953Z shell: /usr/bin/bash -e {0}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4089280Z env:
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4089528Z   TALLY_DB_ADMIN_PASSWORD: synthetic-ci-admin-only-password
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4089891Z   TALLY_DB_PASSWORD: synthetic-ci-app-only-password
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4090207Z   TALLY_PASSWORD: synthetic-ci-operator-only-password
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4090492Z   TALLY_TOKEN: synthetic-ci-machine-only-token
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4090779Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.17/x64
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4091121Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib/pkgconfig
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4091459Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4091761Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4092057Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4092408Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4092662Z ##[endgroup]
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:36.4437119Z npm ci
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1225616Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1226782Z added 221 packages, and audited 222 packages in 3s
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1227091Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1227604Z 75 packages are looking for funding
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1228457Z   run `npm fund` for details
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1266007Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1266534Z 3 high severity vulnerabilities
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1267042Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1267653Z To address issues that do not require attention, run:
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1268351Z   npm audit fix
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1268672Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1268970Z To address all issues, run:
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1269494Z   npm audit fix --force
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1269833Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1270142Z Run `npm audit` for details.
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:39.1481615Z npm --prefix apps/web ci
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:40.0982622Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:40.0983479Z added 23 packages, and audited 24 packages in 900ms
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:40.0984217Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:40.0984559Z 6 packages are looking for funding
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:40.0985198Z   run `npm fund` for details
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:40.0990671Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:40.0991062Z found 0 vulnerabilities
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:40.1110566Z python3 -m venv .venv
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:45.1960892Z .venv/bin/pip install --upgrade pip==26.2.2 setuptools==84.0.0
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:45.9296947Z Requirement already satisfied: pip==26.2.2 in ./.venv/lib/python3.13/site-packages (26.2.2)
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:46.0157674Z Collecting setuptools==84.0.0
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:46.0648723Z   Downloading setuptools-84.0.0-py3-none-any.whl.metadata (6.6 kB)
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:46.0836925Z Downloading setuptools-84.0.0-py3-none-any.whl (818 kB)
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:46.1280607Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 818.2/818.2 kB 29.7 MB/s  0:00:00
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:46.1492937Z Installing collected packages: setuptools
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:46.5250098Z Successfully installed setuptools-84.0.0
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:46.5690504Z .venv/bin/pip install -r requirements-dev.txt
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.1266026Z Collecting ruff==0.17.1 (from -r requirements-dev.txt (line 1))
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.1475112Z   Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (20 kB)
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.1731715Z Collecting playwright==1.64.0 (from -r requirements-dev.txt (line 2))
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.1762870Z   Downloading playwright-1.64.0-py3-none-manylinux1_x86_64.whl.metadata (3.3 kB)
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.1876380Z Collecting pyee<15,>=13 (from playwright==1.64.0->-r requirements-dev.txt (line 2))
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.1910974Z   Downloading pyee-14.0.0-py3-none-any.whl.metadata (1.8 kB)
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.2827646Z Collecting greenlet<4.0.0,>=3.1.1 (from playwright==1.64.0->-r requirements-dev.txt (line 2))
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.2866236Z   Downloading greenlet-3.5.6-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl.metadata (3.8 kB)
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.2995982Z Collecting typing-extensions (from pyee<15,>=13->playwright==1.64.0->-r requirements-dev.txt (line 2))
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.3028852Z   Downloading typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.3088679Z Downloading ruff-0.17.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.4 MB)
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.3902685Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.4/10.4 MB 135.2 MB/s  0:00:00
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.3945768Z Downloading playwright-1.64.0-py3-none-manylinux1_x86_64.whl (48.3 MB)
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.7679029Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.3/48.3 MB 129.6 MB/s  0:00:00
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.7717004Z Downloading greenlet-3.5.6-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl (623 kB)
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.7770078Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 623.8/623.8 kB 98.2 MB/s  0:00:00
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.7801576Z Downloading pyee-14.0.0-py3-none-any.whl (15 kB)
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.7845623Z Downloading typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:47.8517139Z Installing collected packages: typing-extensions, ruff, greenlet, pyee, playwright
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:48.6622857Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:48.6635179Z Successfully installed greenlet-3.5.6 playwright-1.64.0 pyee-14.0.0 ruff-0.17.1 typing-extensions-4.16.0
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:48.7198839Z npm run build
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:48.8047797Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:48.8048572Z > tally-ledger@0.1.0 build
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:48.8048846Z > tsc
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:48.8048951Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:50.4387252Z npm --prefix apps/web run build
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:50.5189241Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:50.5189876Z > tally-console@0.1.0 build
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:50.5190301Z > tsc --noEmit && vite build
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:50.5190471Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:52.0642806Z ^[[36mvite v6.4.4 ^[[32mbuilding for production...^[[36m^[[39m
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:52.1191226Z transforming...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:52.7834664Z ^[[32m✓^[[39m 29 modules transformed.
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:52.8898794Z rendering chunks...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:52.8951925Z computing gzip size...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:52.9019640Z ^[[2mdist/^[[22m^[[32mindex.html                 ^[[39m^[[1m^[[2m  0.47 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  0.32 kB^[[22m
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:52.9020792Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[35mindex-CagPcXT5.css  ^[[39m^[[1m^[[2m  9.87 kB^[[22m^[[1m^[[22m^[[2m │ gzip:  2.94 kB^[[22m
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:52.9021938Z ^[[2mdist/^[[22m^[[2massets/^[[22m^[[36mindex-D3kAsW-H.js   ^[[39m^[[1m^[[2m217.56 kB^[[22m^[[1m^[[22m^[[2m │ gzip: 67.85 kB^[[22m
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:52.9022663Z ^[[32m✓ built in 821ms^[[39m
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:52.9250716Z npm run lint
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:53.0065944Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:53.0066544Z > tally-ledger@0.1.0 lint
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:53.0067138Z > eslint src tests scripts && prettier --check src tests scripts
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:53.0067512Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:54.0076669Z Checking formatting...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:54.5380407Z All matched files use Prettier code style!
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:54.5710409Z npm --prefix apps/web run lint
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:54.6513166Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:54.6513416Z > tally-console@0.1.0 lint
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:54.6513679Z > prettier --check src
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:54.6513835Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:54.7168166Z Checking formatting...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.0659157Z All matched files use Prettier code style!
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.0969225Z .venv/bin/ruff check scripts
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.1028459Z All checks passed!
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.1033632Z .venv/bin/ruff format --check scripts
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.1088026Z 5 files already formatted
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.1092317Z node  --test --test-concurrency=1 dist/tests/*.test.js
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.1433293Z TAP version 13
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.5759396Z # {"event":"request_rejected","trace_id":"e9bdd779-3ca0-43d6-992d-60d378e53b85","status":401,"code":"sign_in_required"}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.5774783Z # {"event":"http_completed","trace_id":"e9bdd779-3ca0-43d6-992d-60d378e53b85","method":"GET","route":"/api/state","status":401,"elapsed_ms":3.4775719999999524}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6010762Z # {"event":"http_completed","trace_id":"df9a49cf-b89f-4ab5-bdb0-efcfdf48e424","method":"POST","route":"/api/login","status":201,"elapsed_ms":15.786351000000025}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6263842Z # {"event":"http_completed","trace_id":"e98ca049-5e0d-4d84-9abf-c57305eda7cf","method":"GET","route":"/api/state","status":200,"elapsed_ms":20.826313000000027}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6278046Z # {"event":"request_rejected","trace_id":"1cf9fe86-6fbb-4ca6-af57-59c340b8b66b","status":403,"code":"csrf_required"}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6286480Z # {"event":"http_completed","trace_id":"1cf9fe86-6fbb-4ca6-af57-59c340b8b66b","method":"POST","route":"/api/rules","status":403,"elapsed_ms":1.7039180000000442}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6326702Z # {"event":"http_completed","trace_id":"b3fc80e2-ad75-4865-af39-55d8f18605d4","method":"POST","route":"/api/rules","status":201,"elapsed_ms":2.848863999999992}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6357561Z # {"event":"http_completed","trace_id":"ab93434a-b8a2-45d9-b2b3-ff14fbb89ebc","method":"POST","route":"/api/logout","status":201,"elapsed_ms":1.6450600000000009}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6374597Z # {"event":"request_rejected","trace_id":"37c796cf-b6e6-4776-896e-1679456d62c9","status":401,"code":"sign_in_required"}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6379124Z # {"event":"http_completed","trace_id":"37c796cf-b6e6-4776-896e-1679456d62c9","method":"GET","route":"/api/state","status":401,"elapsed_ms":1.1310450000000287}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6428861Z # Subtest: real HTTP cookie login, CSRF, logout and revocation
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6446222Z ok 1 - real HTTP cookie login, CSRF, logout and revocation
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6446953Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6447380Z   duration_ms: 185.421712
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6447959Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6448382Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6471203Z # {"event":"http_completed","trace_id":"0a7b128f-e426-4a29-9a3c-8462aaad1c33","method":"POST","route":"/api/accounts","status":201,"elapsed_ms":3.8572899999999777}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6512572Z # {"event":"http_completed","trace_id":"9fb144e7-6b2a-4c03-81de-fa64045a2cef","method":"POST","route":"/api/accounts","status":201,"elapsed_ms":2.460092999999972}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6592638Z # {"event":"http_completed","trace_id":"b9323252-8569-4378-bd88-a90e822f284c","method":"POST","route":"/api/ledger/post","status":201,"elapsed_ms":6.490178000000014}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6626183Z # {"event":"http_completed","trace_id":"cd63648f-79e5-409e-8a67-c40cfeb53152","method":"GET","route":"/api/state","status":200,"elapsed_ms":2.592418000000066}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6665071Z # {"event":"http_completed","trace_id":"9c95a9c6-0c3e-450a-9327-1b4065d854ce","method":"POST","route":"/api/ledger/replay","status":201,"elapsed_ms":2.695764000000054}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6676221Z # Subtest: real HTTP retains money strings above Number safe integer bounds
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6678376Z ok 2 - real HTTP retains money strings above Number safe integer bounds
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6678882Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6680228Z   duration_ms: 25.819306
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6680545Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6680802Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6726655Z # {"event":"request_rejected","trace_id":"5ed49c95-ae7d-40d1-8029-05c2f216bd60","status":409,"code":"idempotency_conflict"}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6730351Z # {"event":"http_completed","trace_id":"5ed49c95-ae7d-40d1-8029-05c2f216bd60","method":"POST","route":"/api/ledger/post","status":409,"elapsed_ms":4.308518999999933}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6761218Z # {"event":"request_rejected","trace_id":"ba7b409f-f14a-4828-8250-d50a7c837a22","status":422,"code":"invalid_input"}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6765369Z # {"event":"http_completed","trace_id":"ba7b409f-f14a-4828-8250-d50a7c837a22","method":"POST","route":"/api/ledger/post","status":422,"elapsed_ms":1.4412619999999379}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6802518Z # Subtest: real HTTP rejects float money and conflicting idempotency
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6807483Z ok 3 - real HTTP rejects float money and conflicting idempotency
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6808459Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6808911Z   duration_ms: 9.94724
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6809234Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6809491Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6829608Z # {"event":"http_completed","trace_id":"d50b2faf-0810-4385-b475-260e557820cf","method":"POST","route":"static","status":413,"elapsed_ms":1.4211420000000317}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6842409Z # {"event":"http_completed","trace_id":"d832f0f8-2109-4c13-ad8b-9a7ca1fa3978","method":"GET","route":"static","status":401,"elapsed_ms":0.6448420000000397}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6853176Z # {"event":"http_completed","trace_id":"0a3bea12-5363-4248-9e82-642d47f67711","method":"GET","route":"static","status":200,"elapsed_ms":0.42162499999994907}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6868706Z # {"event":"request_rejected","trace_id":"beac595d-fe9c-4b4b-9f27-36fdff3bebc0","status":404,"code":"not_found"}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6871570Z # {"event":"http_completed","trace_id":"beac595d-fe9c-4b4b-9f27-36fdff3bebc0","method":"GET","route":"static","status":404,"elapsed_ms":0.9241630000000214}
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6917203Z # Subtest: real HTTP input bounds and authenticated metrics
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6925533Z ok 4 - real HTTP input bounds and authenticated metrics
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6926322Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6926851Z   duration_ms: 10.46203
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6928104Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.6928366Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.8823967Z # Subtest: database rejects runtime edits and unbalanced direct-function input atomically
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.8825187Z ok 5 - database rejects runtime edits and unbalanced direct-function input atomically
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.8825795Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.8826044Z   duration_ms: 65.883964
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.8826333Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.8826581Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9376911Z # Subtest: concurrent duplicated posting creates one event and one balance effect
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9381271Z ok 6 - concurrent duplicated posting creates one event and one balance effect
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9381859Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9382179Z   duration_ms: 54.589714
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9382510Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9382806Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9481314Z # Subtest: database account lock prevents competing overdrafts
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9482024Z ok 7 - database account lock prevents competing overdrafts
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9482486Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9482747Z   duration_ms: 10.699534
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9483051Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9483291Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9541539Z # Subtest: currency mismatch rolls back the entire journal
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9546346Z ok 8 - currency mismatch rolls back the entire journal
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9547042Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9547418Z   duration_ms: 6.390528
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9547738Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:55.9548109Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1502167Z # Subtest: property: actual Postgres postings conserve and replay exactly
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1503734Z ok 9 - property: actual Postgres postings conserve and replay exactly
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1504076Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1504362Z   duration_ms: 195.859432
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1504676Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1504921Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1852061Z # Subtest: projection corruption is detected and rebuilds the same balance digest
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1852949Z ok 10 - projection corruption is detected and rebuilds the same balance digest
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1853277Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1853511Z   duration_ms: 34.258587
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1853760Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1853926Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1964315Z # Subtest: rules and decisions remain immutable and exact after new publication
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1965926Z ok 11 - rules and decisions remain immutable and exact after new publication
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1966690Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1967014Z   duration_ms: 11.376734
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1967358Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.1967610Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.2808067Z # Subtest: a blocked decision query fails its budget instead of returning approval
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.2808745Z ok 12 - a blocked decision query fails its budget instead of returning approval
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.2809162Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.2809437Z   duration_ms: 84.570337
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.2809669Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.2810207Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.2989682Z # Subtest: reconciliation review races cannot assign one ledger record twice
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.2990544Z ok 13 - reconciliation review races cannot assign one ledger record twice
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.2990956Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.2991142Z   duration_ms: 18.029052
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.2991471Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.2991732Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.3093440Z # Subtest: source point identity cannot be silently rewritten
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.3094147Z ok 14 - source point identity cannot be silently rewritten
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.3094603Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.3094866Z   duration_ms: 5.032135
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.3095158Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.3095428Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5596281Z # Subtest: property: exact conservation beyond safe JavaScript integer range
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5597333Z ok 15 - property: exact conservation beyond safe JavaScript integer range
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5598070Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5598465Z   duration_ms: 19.547787
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5598840Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5599107Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5599646Z # Subtest: property: posting line order is semantically idempotent
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5600364Z ok 16 - property: posting line order is semantically idempotent
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5600862Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5601160Z   duration_ms: 7.566851
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5601536Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5602040Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5602522Z # Subtest: property: every nonzero imbalance is rejected
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5606388Z ok 17 - property: every nonzero imbalance is rejected
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5607090Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5607532Z   duration_ms: 10.459086
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5608064Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5608333Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5608745Z # Subtest: property: floating point money is rejected
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5609298Z ok 18 - property: floating point money is rejected
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5609682Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5609961Z   duration_ms: 10.537465
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5610258Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5610506Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5611020Z # Subtest: property: duplicate accounts cannot create a fake balanced journal
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5611780Z ok 19 - property: duplicate accounts cannot create a fake balanced journal
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5612262Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5612527Z   duration_ms: 6.079554
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5612816Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5613066Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5613540Z # Subtest: property: a changed event body fails its original hash binding
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5616762Z ok 20 - property: a changed event body fails its original hash binding
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5657732Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5658445Z   duration_ms: 9.263935
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5658762Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5659007Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5659426Z # Subtest: property: a replayed event identity is rejected
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5659989Z ok 21 - property: a replayed event identity is rejected
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5660257Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5660425Z   duration_ms: 8.347513
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5660615Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5660770Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5661070Z # Subtest: property: request digest changes never pass replay
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5661672Z ok 22 - property: request digest changes never pass replay
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5662515Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5662789Z   duration_ms: 5.067819
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5663082Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5663338Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5663687Z # Subtest: property: decision boundaries use exact integer comparison
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5664247Z ok 23 - property: decision boundaries use exact integer comparison
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5664680Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5664859Z   duration_ms: 1.317576
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5665050Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5665211Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5665481Z # Subtest: property: reconciliation is input-order independent
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5665858Z ok 24 - property: reconciliation is input-order independent
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5666332Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5666494Z   duration_ms: 12.709208
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5666682Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5666908Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5667263Z # Subtest: reconciliation abstains on duplicate bank competition
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5668037Z ok 25 - reconciliation abstains on duplicate bank competition
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5668458Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5668697Z   duration_ms: 0.296517
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5668976Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5669231Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5669688Z # Subtest: merchant cache is keyed by catalog version and bounded
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5670319Z ok 26 - merchant cache is keyed by catalog version and bounded
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5670733Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5670985Z   duration_ms: 27.544892
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5671277Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5671681Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5672242Z # Subtest: freshness does not mistake ingestion time or a future point for freshness
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5673085Z ok 27 - freshness does not mistake ingestion time or a future point for freshness
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5673597Z   ---
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5673844Z   duration_ms: 0.348836
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5674133Z   type: 'test'
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5674370Z   ...
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5777252Z 1..27
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5777560Z # tests 27
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5778581Z # suites 0
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5778886Z # pass 27
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5779139Z # fail 0
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5779392Z # cancelled 0
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5779658Z # skipped 0
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5779902Z # todo 0
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5780181Z # duration_ms 1444.891333
+gates	Run make setup build lint test bench scan	2026-10-28T02:00:56.5828113Z node  dist/scripts/bench.js
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0280592Z {
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0280881Z   "posted": 1000,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0281117Z   "ledger_replayed": 1003,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0281345Z   "duplicates_effects": 0,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0281547Z   "decision_p99_ms": [
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0281720Z     {
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0281883Z       "concurrency": 1,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0282143Z       "p99_ms": 15.761497999999847,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0282361Z       "failures": 0,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0282544Z       "budget_met": true
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0282731Z     },
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0282882Z     {
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0283039Z       "concurrency": 4,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0283240Z       "p99_ms": 18.797473999999966,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0283460Z       "failures": 0,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0283640Z       "budget_met": true
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0283819Z     },
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0283964Z     {
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0284118Z       "concurrency": 16,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0284315Z       "p99_ms": 52.0562689999997,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0284517Z       "failures": 0,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0284870Z       "budget_met": true
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0285213Z     }
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0285486Z   ],
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0285724Z   "reconciliation": {
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0286058Z     "matches": 151,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0286394Z     "precision": 1,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0286707Z     "recall": 0.8435754189944135,
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0287027Z     "wrong": 0
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0287232Z   },
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0287394Z   "enrichment_accuracy": 1
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0287589Z }
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.0936218Z npm audit --audit-level=high
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5151556Z # npm audit report
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5151878Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5152504Z body-parser  2.0.0 - 2.3.0
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5152841Z Severity: high
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5153807Z body-parser vulnerable to Denial of Service via trailing bytes after a compressed request body - https://github.com/advisories/GHSA-27r3-jxmh-p828
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5154718Z fix available via `npm audit fix`
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5155099Z node_modules/body-parser
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5155303Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5155428Z multer  2.0.0 - 2.4.0
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5155674Z Severity: high
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5156618Z multer vulnerable to Denial of Service via a pending asynchronous fileFilter after request teardown - https://github.com/advisories/GHSA-q7qp-rjg7-q26m
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5157826Z fix available via `npm audit fix --force`
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5158766Z Will install @nestjs/platform-express@12.3.2, which is outside the stated dependency range
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5159324Z node_modules/multer
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5159691Z   @nestjs/platform-express  10.4.18 - 10.4.22 || 11.1.2 - 12.2.0
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5160235Z   Depends on vulnerable versions of multer
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5160614Z   node_modules/@nestjs/platform-express
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5160883Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5161048Z 3 high severity vulnerabilities
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5161252Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5161486Z To address issues that do not require attention, run:
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5161847Z   npm audit fix
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5161990Z 
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5162104Z To address all issues, run:
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5162314Z   npm audit fix --force
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5234190Z make: *** [Makefile:32: scan] Error 1
+gates	Run make setup build lint test bench scan	2026-10-28T02:01:02.5250449Z ##[error]Process completed with exit code 2.
