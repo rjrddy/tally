@@ -95,7 +95,7 @@ function installMotion(profile) {
         // Animate only once click targeting is committed; shrinking a pressed hitbox can otherwise lose edge clicks.
         document.addEventListener('click', press, { capture: true, signal });
         document.addEventListener('keydown', press, { capture: true, signal });
-        for (const event of ['click', 'change'])
+        for (const event of ['click', 'change', 'keydown'])
             document.addEventListener(event, () => { interacted = true; }, { capture: true, signal });
         observer = new MutationObserver(records => {
             for (const record of records) {
@@ -111,7 +111,7 @@ function installMotion(profile) {
                 }
             }
         });
-        observer.observe(document.body, { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ['class', 'aria-current', 'aria-pressed', 'open'] });
+        observer.observe(document.body, { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ['class', 'aria-current', 'aria-pressed', 'aria-selected', 'open'] });
     };
     preference.addEventListener('change', () => preference.matches ? start() : stop());
     window.addEventListener('pagehide', stop, { once: true });
@@ -120,59 +120,45 @@ function installMotion(profile) {
     start();
 }
 installMotion({
-    "name": "tally",
-    "press": [
+  "name": "tally",
+  "press": [
+    {
+      "transform": "scaleX(0.97)"
+    },
+    {
+      "transform": "scaleX(1)"
+    }
+  ],
+  "neighbors": ".fault-tabs button,.instrument-keys button",
+  "rules": [
+    {
+      "watch": ".fault-result",
+      "targets": "h3,pre",
+      "frames": [
         {
-            "transform": "scaleX(0.97)"
+          "transform": "translateX(-5px)"
         },
         {
-            "transform": "scaleX(1)"
+          "transform": "translateX(0)"
         }
-    ],
-    "neighbors": ".fault-tabs button,.instrument-keys button",
-    "rules": [
+      ],
+      "duration": 180
+    },
+    {
+      "watch": ".fault-tabs",
+      "targets": "button[aria-selected=\"true\"]",
+      "frames": [
         {
-            "watch": ".fault-result",
-            "targets": "strong,b",
-            "frames": [
-                {
-                    "transform": "translateX(-5px)"
-                },
-                {
-                    "transform": "translateX(0)"
-                }
-            ],
-            "duration": 180
+          "transform": "translateX(5px)"
         },
         {
-            "watch": "#accounts",
-            "targets": "td:last-child",
-            "frames": [
-                {
-                    "transform": "translateX(5px)"
-                },
-                {
-                    "transform": "translateX(0)"
-                }
-            ],
-            "duration": 180
-        },
-        {
-            "watch": ".details",
-            "targets": "summary",
-            "frames": [
-                {
-                    "transform": "translateX(-5px)"
-                },
-                {
-                    "transform": "translateX(0)"
-                }
-            ],
-            "duration": 180
+          "transform": "translateX(0)"
         }
-    ]
+      ],
+      "duration": 180
+    }
+  ]
 });
-
 })();
 const proof = await fetch("/proof.json").then((r) => {
   if (!r.ok) throw Error("Evidence unavailable");

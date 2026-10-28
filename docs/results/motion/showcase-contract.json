@@ -22,10 +22,10 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 119.30000007152557
+      "at": 98.09999990463257
     },
     {
-      "tag": "STRONG",
+      "tag": "H3",
       "cls": "",
       "id": "",
       "frames": [
@@ -42,10 +42,10 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 158.80000007152557
+      "at": 140.19999992847443
     },
     {
-      "tag": "TD",
+      "tag": "BUTTON",
       "cls": "",
       "id": "",
       "frames": [
@@ -62,27 +62,7 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 158.80000007152557
-    },
-    {
-      "tag": "SUMMARY",
-      "cls": "",
-      "id": "",
-      "frames": [
-        {
-          "transform": "translateX(-5px)"
-        },
-        {
-          "transform": "translateX(0)"
-        }
-      ],
-      "options": {
-        "duration": 180,
-        "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
-        "iterations": 1,
-        "fill": "none"
-      },
-      "at": 158.80000007152557
+      "at": 140.19999992847443
     }
   ],
   "transformOpacityOnly": true,
