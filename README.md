@@ -51,3 +51,5 @@ Reproduce the core proof with `make lint test bench`. See [caught replay orderin
 6. **Next:**
 
 Host the persistent backend with explicitly configured Postgres credentials; add backup/restore and replicated failover campaigns, tenant isolation, hold/capture/reversal semantics, accounting policy, reviewed rule activation and independently designed matching fixtures. Add distributed tracing and pagination/retention beyond the bounded demo. Keep these limits separate from the measured local correctness and latency results.
+
+Contextual motion uses finite transform-only responses to real controls and changed evidence, with live reduced-motion cancellation. See [motion design and validation](docs/MOTION.md); frame rate is not measured.

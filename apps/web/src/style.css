@@ -775,3 +775,14 @@ footer {
   border-color: #c4a087;
   background: #f5e4d2;
 }
+
+/* Motion is event-driven in motion.ts/js; resting content is always visible. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "surface": "tally",
+  "source": "flagships/tally/apps/web/dist",
+  "scope": "Actual built UI/control/reduced-motion smoke; backend unavailable for static console previews except Fit. Separate live workflows verify ten backends.",
+  "controlResponse": true,
+  "offlineActionsRemainDisabled": false,
+  "liveReducedMotion": true,
+  "pageErrors": [],
+  "mobileOverflow": false,
+  "widths": [
+    1440,
+    390
+  ],
+  "animations": [
+    {
+      "tag": "BUTTON",
+      "cls": "active",
+      "id": "",
+      "frames": [
+        {
+          "transform": "scaleX(0.97)"
+        },
+        {
+          "transform": "scaleX(1)"
+        }
+      ],
+      "options": {
+        "duration": 160,
+        "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "iterations": 1,
+        "fill": "none"
+      },
+      "at": 429.60000002384186
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "",
+      "id": "",
+      "frames": [
+        {
+          "transform": "translateX(0) scaleX(1)"
+        },
+        {
+          "transform": "translateX(2px) scaleX(0.985)",
+          "offset": 0.28
+        },
+        {
+          "transform": "translateX(0) scaleX(1)"
+        }
+      ],
+      "options": {
+        "duration": 190,
+        "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "iterations": 1,
+        "fill": "none"
+      },
+      "at": 429.6999999284744
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "",
+      "id": "",
+      "frames": [
+        {
+          "transform": "translateX(0) scaleX(1)"
+        },
+        {
+          "transform": "translateX(2px) scaleX(0.985)",
+          "offset": 0.28
+        },
+        {
+          "transform": "translateX(0) scaleX(1)"
+        }
+      ],
+      "options": {
+        "duration": 190,
+        "easing": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "iterations": 1,
+        "fill": "none"
+      },
+      "at": 429.6999999284744
+    }
+  ]
+}

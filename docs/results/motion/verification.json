@@ -1,0 +1,18 @@
+{
+  "project": "tally",
+  "motion_profile": "Double-entry registration",
+  "source_sha256": {
+    "apps/web/src/motion.ts": "760722346dbd47370a22504d254140dee1cb87712e37916d6ac03928781fbe93",
+    "apps/web/src/style.css": "5fa32db6aa43db1339012b01f3d8a17b81351e7b318b137b0e61de21b9dd636a",
+    "deploy/site/app.js": "2fd65ca8da4a8c0ad3d569f716cf4a924e369133fddc6ae8b7c2a26a8e0de556"
+  },
+  "frontend_build_lint": "passed",
+  "motion_contract": "passed",
+  "built_page_smoke": "passed",
+  "live_backend_browser": "not rerun; actual console entry state and public saved evidence checked",
+  "showcase_contract": "passed",
+  "compositor_properties_only": true,
+  "live_reduced_motion_cancellation": true,
+  "fps": "not measured",
+  "new_dependencies": 0
+}
