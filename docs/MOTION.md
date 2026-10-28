@@ -27,3 +27,5 @@ Button feedback begins when click targeting is committed, so the first press doe
 The first motion commit passed application tests but CI found existing body-parser/multer security advisories. The affected Nest Express adapter was updated to 12.3.2 and body-parser's supported lockfile range was refreshed. No ledger policy or schema changed. A temporary isolated PostgreSQL run passed all 27 Node unit/integration/property tests, build/lint and npm audit with zero vulnerabilities. See `security-gates.log`, `security-fix.log`, and `caught-ci-security-failure.log`. This is a separate maintenance change, not a motion dependency.
 
 References: https://github.com/advisories/GHSA-27r3-jxmh-p828 and https://github.com/advisories/GHSA-q7qp-rjg7-q26m .
+
+Connected controls recoil only with their immediate previous/next matching siblings. The left sibling moves left, the right moves right; distant controls do not react. The runtime reads sibling references, not geometry.

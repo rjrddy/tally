@@ -22,7 +22,7 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 98.09999990463257
+      "at": 112.20000004768372
     },
     {
       "tag": "H3",
@@ -42,7 +42,7 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 140.19999992847443
+      "at": 150.80000007152557
     },
     {
       "tag": "BUTTON",
@@ -62,13 +62,14 @@
         "iterations": 1,
         "fill": "none"
       },
-      "at": 140.19999992847443
+      "at": 150.80000007152557
     }
   ],
   "transformOpacityOnly": true,
   "zeroDelay": true,
   "immediatePointerAndKeyboard": true,
   "edgeClickTargetStableUntilActivation": true,
+  "immediateNeighborsOnly": true,
   "disabledAndEditorExcluded": true,
   "liveReducedMotionCancellation": true,
   "reEnable": true,

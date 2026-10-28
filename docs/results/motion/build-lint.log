@@ -1,6 +1,6 @@
 src/motion.ts 59ms
-src/main.tsx 70ms (unchanged)
-src/style.css 38ms (unchanged)
+src/main.tsx 71ms (unchanged)
+src/style.css 39ms (unchanged)
 
 > tally-console@0.1.0 lint
 > prettier --check src
@@ -18,6 +18,6 @@ rendering chunks...
 computing gzip size...
 dist/index.html                   0.47 kB │ gzip:  0.32 kB
 dist/assets/index-CagPcXT5.css    9.87 kB │ gzip:  2.95 kB
-dist/assets/index-D3kAsW-H.js   217.56 kB │ gzip: 67.78 kB
-✓ built in 540ms
+dist/assets/index-D5Tj0RAN.js   217.57 kB │ gzip: 67.80 kB
+✓ built in 533ms
 Built measured evidence and actual console recording. Persistent API is not hosted.

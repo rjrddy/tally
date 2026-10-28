@@ -2,9 +2,9 @@
   "project": "tally",
   "motion_profile": "Double-entry registration",
   "source_sha256": {
-    "apps/web/src/motion.ts": "760722346dbd47370a22504d254140dee1cb87712e37916d6ac03928781fbe93",
+    "apps/web/src/motion.ts": "a63d9e8e196fccc36f7d06739954327387ca74194ba51e1b0893a9d3591aa403",
     "apps/web/src/style.css": "5fa32db6aa43db1339012b01f3d8a17b81351e7b318b137b0e61de21b9dd636a",
-    "deploy/site/app.js": "2387984b49776bfad9ad5a6683baa9fbabfb291f4ec60027d94a82ee1948560c"
+    "deploy/site/app.js": "934e101f7be8ed01d9c9882cbd2e87c946a3effb23cd1bd8e34342cd48c493d8"
   },
   "frontend_build_lint": "passed",
   "motion_contract": "passed",
